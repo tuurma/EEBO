@@ -1,0 +1,275 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>An epistle for true love, unity, and order in the Church of Christ against the spirit of discord, disorder and confusion &amp;c. : recommended to friends in truth chiefly for the sake of the weak and unstable minded for information and encouragement in our Christian unity and society, held in the spirit of Christ both in faith and practice / by two servants of the Church according to our measures, Anne Whitehead, Mary Elson.</title>
+            <author>Whitehead, Anne, 1624-1686.</author>
+         </titleStmt>
+         <extent>Approx. 37 KB of XML-encoded text transcribed from 9 1-bit group-IV TIFF page images.</extent>
+         <publicationStmt>
+            <publisher>Text Creation Partnership,</publisher>
+            <pubPlace>Ann Arbor, MI ; Oxford (UK) :</pubPlace>
+            <date when="2011-12">2011-12 (EEBO-TCP Phase 2).</date>
+            <idno type="DLPS">A65830</idno>
+            <idno type="STC">Wing W1883</idno>
+            <idno type="STC">ESTC R234487</idno>
+            <idno type="EEBO-CITATION">13541589</idno>
+            <idno type="OCLC">ocm 13541589</idno>
+            <idno type="VID">100086</idno>
+            <availability>
+               <p>This keyboarded and encoded edition of the work described above is co-owned by the institutions providing financial support to the Early English Books Online Text Creation Partnership. Searching, reading, printing, or downloading EEBO-TCP texts is reserved for the authorized users of these project partner institutions. Permission must be granted for subsequent distribution, in print or electronically, of this text, in whole or in part.  Please contact project staff at eebotcp-info@umich.edu for further information or permissions.</p>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Early English books online.</title>
+         </seriesStmt>
+         <notesStmt>
+            <note>(EEBO-TCP ; phase 2, no. A65830)</note>
+            <note>Transcribed from: (Early English Books Online ; image set 100086)</note>
+            <note>Images scanned from microfilm: (Early English books, 1641-1700 ; 1559:33)</note>
+         </notesStmt>
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title>An epistle for true love, unity, and order in the Church of Christ against the spirit of discord, disorder and confusion &amp;c. : recommended to friends in truth chiefly for the sake of the weak and unstable minded for information and encouragement in our Christian unity and society, held in the spirit of Christ both in faith and practice / by two servants of the Church according to our measures, Anne Whitehead, Mary Elson.</title>
+                  <author>Whitehead, Anne, 1624-1686.</author>
+                  <author>Elson, Mary, 1623 or 4-1707.</author>
+               </titleStmt>
+               <extent>14 p.   </extent>
+               <publicationStmt>
+                  <publisher>Printed and sold by Andrew Sowle ...,</publisher>
+                  <pubPlace>London :</pubPlace>
+                  <date>[1680?]</date>
+               </publicationStmt>
+               <notesStmt>
+                  <note>Date of publication suggested by Wing.</note>
+                  <note>Reproduction of original in the Harvard University Library.</note>
+               </notesStmt>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Created by converting TCP files to TEI P5 using tcp2tei.xsl,
+      TEI @ Oxford.
+      </p>
+         </projectDesc>
+         <editorialDecl n="4">
+            <p>Manually keyed and coded text linked to page images in accordance with level 4 of the TEI in Libraries guidelines.</p>
+            <p>Issued variously as SGML (TCP schema; ASCII text with mnemonic sdata character entities); displayable XML (TCP schema; characters represented either as UTF-8 Unicode or text strings within braces); or lossless XML (TEI P5, characters represented either as UTF-8 Unicode or TEI g elements).</p>
+            <p>Keying and markup guidelines available at TCP web site (http://www.textcreationpartnership.org/docs/)</p>
+         </editorialDecl>
+         <listPrefixDef>
+            <prefixDef ident="tcp"
+                       matchPattern="([0-9\-]+):([0-9IVX]+)"
+                       replacementPattern="http://eebo.chadwyck.com/downloadtiff?vid=$1&amp;page=$2"/>
+            <prefixDef ident="char"
+                       matchPattern="(.+)"
+                       replacementPattern="https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1"/>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">eng</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="http://authorities.loc.gov/">
+               <term>Society of Friends --  Apologetic works.</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change>
+            <date>2010-08</date>
+            <label>TCP</label>Assigned for keying and markup</change>
+         <change>
+            <date>2010-09</date>
+            <label>SPi Global</label>Keyed and coded from ProQuest page images</change>
+         <change>
+            <date>2010-11</date>
+            <label>Pip Willcox</label>Sampled and proofread</change>
+         <change>
+            <date>2010-11</date>
+            <label>Pip Willcox</label>Text and markup reviewed and edited</change>
+         <change>
+            <date>2011-06</date>
+            <label>pfs</label>Batch review (QC) and XML conversion</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:lang="eng">
+      <front>
+         <div type="title_page">
+            <pb facs="tcp:100086:1"/>
+            <pb facs="tcp:100086:1"/>
+            <p>AN EPISTLE FOR <hi>True Love, Vnity</hi> AND ORDER IN THE Church of Chriſt.</p>
+            <p>Againſt the <hi>Spirit</hi> of <hi>Diſcord, Diſorder</hi> and <hi>Confuſion, &amp;c.</hi>
+            </p>
+            <p>Recommended to Friends in Truth, chiefly for the ſake of the Weak and Unſtable Minded, for Information and Encouragement in our
+<hi>Chriſtian <g ref="char:V">Ʋ</g>nity</hi> and <hi>Society,</hi> held in the Spirit of Chriſt, both in Faith and Practice.</p>
+            <p>
+               <hi>By Two Servants of the Church, according to our Meaſures,
+<hi>Anne Whitehead, Mary Elſon.</hi>
+               </hi>
+            </p>
+            <q>
+               <p>But God hath tempered the Body together —that there ſhould be <hi>No SCHISME</hi> in the Body, but that the Members ſhould have the
+<hi>SAME CARE</hi> one for another,</p>
+               <bibl>
+                  <hi>1 Cor. 12.</hi>
+               </bibl>
+            </q>
+            <p>
+               <hi>LONDON:</hi> Printed and Sold by <hi>Andrew Sowle</hi> at the Crooked-Billet in <hi>Holloway-Lane,</hi> near <hi>Shoreditch.</hi>
+            </p>
+         </div>
+      </front>
+      <body>
+         <div type="letter">
+            <pb facs="tcp:100086:2"/>
+            <pb n="3" facs="tcp:100086:2"/>
+            <head>An <hi>EPISTLE</hi> for true Love, <g ref="char:V">Ʋ</g>nity and Order, &amp;c.</head>
+            <opener>
+               <salute>Dear Friends;</salute>
+            </opener>
+            <p>VVHom the Lord hath called out of the World's Ways and Manners, and choſen to himſelf, and found faith­ful according to the Proportion of Faith, and Mea­ſure of his Grace received, how to walk, Oh! let us hold faſt that which we have receive, that none may take our Crown: Oh! let us keep to our firſt Love, let us do our firſt Works, and be rightly zeal­ous for the Lords Honour; and ſo with a good Conſcience towards God, and in the ſweet Spirit of Peace, ſeeking good one towards another, as good Examples and wholeſome Paterns in our Practices. Oh! let us keep our good Order in the Truth, and Unity of the Spi­rit, even as we received of Chriſt Jeſus in the begining,<note place="margin">1 <hi>Joh.</hi> 1.7.</note> that we ſhould walk in the Light, as he is in the Light (ſo ſhall we have fellowſhip one with another) which Light is one in us all, and the one only true and living Way, leading to the Knowledge and living Obedience of the one, true and living God, that in his own living Spirit of Truth, we might Worſhip him, and in all whol­ſom Service hold forth his holy and reverend Name to be one in us all, who are gathered into it, ſerving the Lord with one Heart, one Soul, one Mind and one Conſent.—And in the beginning of our Day, you that were then born and brought forth in the Truth, you know the Harmony of our Unity was our Beauty and Comlineſs, yea, our Strength and Compleatneſs, ſo far as we obtained then; and ſo 'tis now, bleſſed be the Lord, can we with one Heart ſay, who by his heavenly Power have been from the beginning kept upon his Everlaſting Foundation of true Unity, held in his Spirit, which is the Bond of our Peace, to this very Day and Time, in which the Lord hath ſuffered Blindneſs, in part, to happen to ſome, through their own Neglect of Watchfulneſs, and declining their firſt Love by the Enemy's Subtilty prevailing, who came out amongſt us, and had a part in the Belief and Diſcovery of the Way of Truth; but now, ſome only have the Sheeps cloathing, and others have loſt that too, <pb n="4" facs="tcp:100086:3"/>who through a prejudiced Mind are alienated from that Unity of Spi­rit &amp; bond of Peace, in which we keep our wholeſome practices, which we have received in the
+<hi>
+                  <g ref="char:V">Ʋ</g>nity &amp; Order of the Goſpel of Peace &amp; Truth of Chri<gap reason="illegible" resp="#OXF" extent="2 letters">
+                     <desc>••</desc>
+                  </gap>, Jeſus,</hi> in the
+<hi>fellowſhip of the Spirit, in Bowels of Mercy,</hi> being like­minded, and of one accord,<note place="margin">2 <hi>Phil.</hi> 1.4.</note> 
+               <hi>in whaſoever things are True, Juſt, Honeſt, and of good Report;</hi> not that we ſhould think of them only, but be in the Practice of them (as we are) and feel the God of Peace with us therein,<note place="margin">1 <hi>Cor.</hi>
+1.6. &amp; 10.</note> who are confirmed in the Teſtimony of Chriſt Jeſus, the <hi>one Guide, Way</hi> and <hi>Rule</hi> we are to walk after, where all ſpeak one thing, that there be no Diſ­ſention amongſt us, but to be knit together in one Mind and in one Judgment; this we have received of Chriſt Jeſus, our Lord, King and only Law giver, that we might walk ſo in ſubjection to his Rule and Government, that all things might be done Decently and in Order; for our God is the God of Order, in all the Churches of his Saints, and not the God of Confuſion, bleſſed be his Name; but to our bur­den and grief, we find among ſome, a contrary Spirit that will not ſubject to Unity in wholeſome Practices amongſt us, and that will needs interpoſe to deſtroy Unity in ſome places, and obtrude it ſelf to confound our wholeſome Order and Practices received amongſt us, as a Church and People. And through this contrary Spirit, and pre­judiced Mind, the Accuſer of the Brethren is broken out, under a ſpecious pretence, crying out, <hi>Liberty of Conſcience, Liberty of Con­ſcience,</hi> in oppoſition to thoſe needful, convenient and wholeſome Practices exerciſed amongſt us, in outward things, to which we are called, as a People that are diſtinguiſhed from the World's dark Ways and Corrupt Manners, in keeping our Conſciences void of Offence towards God and Man, in keeping both in the Power and Form of Godlineſs.</p>
+            <p>Now that the Simple may not be enſnared, nor the Weak unſtable minded deceived, nor the Unwatchful at unawares overtaken, through the crafty inſinuations of this accuſing, oppoſing, dividing Spirit, that is at work in this our day, to confound Order, againſt the peace­able Government of Chriſt, amongſt his People; therefore in Duty to the Lord, and to clear my Conſcience, for the ſake of thoſe be­fore-mentioned, are theſe few Lines writ; Wherefore in Humility of Soul, as before the Lord, I beſeech you, tender Ones, in ſeri­ouſneſs, and fear towards God, weigh the Matter: This Dividing, Accuſing, Prejudicial Worker, would introduce a Belief,
+<hi>That an</hi> Apoſtacy <hi>is entering, and we are gone from the Beginning, or firſt Principle, <pb n="5" facs="tcp:100086:3"/>and the Power loſt; and now Forms are ſetting up, and Impoſition on Con­ſciences, and the like: And amongſt whom is all this,</hi> ſay they, <hi>but amongſt us who are in <g ref="char:V">Ʋ</g>nity of Spirit, both in Faith and Practices,</hi> with ſincere minds towards God, are preſerved in ſubjection, peaceably in Unity, and wholeſome comely Order that ſpeaks forth our God to be the God of Order; and 'tis amongſt theſe, and ſuch that they imagine this Fearful Impoſture, and Arbitrary Rule, impoſing Preſcriptions and Laws on the tender Conſciences of the Weak, is now gotten up to Exerciſe, and ſo the Liberty of the tender Conſcience is loſt: And you ſay, They are entangled with a yoke of Bondage again, who would divide the Heritage of God at this day. Pray Friends, let us in this conſider whether theſe in this Blindneſs, which God hath ſuffered through their Perjudiced Mind, juſtly to hapen in them, by which are they not putting Darkneſs for Light and Light for Darkneſs, while they are ſtriving in the ſtifneſs of their Wills to rule, placing their own Wills for Conſcience, and would have a Liberty therein, which Chriſt never ſet free to any that are in a Preverſe, Gain-ſaying, Op­ſing, Willful Spirit, void of the Reaſon of Truth, and the Fellow­ſhip that is in it, and ſo are led by a Miſ-guided Conſcience; for we never underſtood that Conſcience to be rightly guided, that was not renewed and regulated by the Light of Chriſt Jeſus, which is one in all Conſciences, and leads into the Sameneſs of Mind,<note place="margin">1 <hi>Cor.</hi> 1.6.</note> not only in Faith, but alſo in found Judgment and Practice (and ſo the Teſtimony of Chriſt Jeſus hath been confirmed in us) the true Rectifier and Guide of the Conſcience void of Offence; but now where Self-will is put from Conſcience, 'tis ſenſibly felt to be a groſs Miſtake. And ſuch are (in Chriſtian Charity) to be pitied and better informed, and indeed much Travel bath been for that, ſo that the Miſ-led in a contrary Judgment might be helped and reduced back in­to Unity and our peaceable Fellowſhip, in our wholeſome Practices, in the outward Affairs of Truth; but that which adds to our Sorrow, that though they ſtill cry, <hi>The tender Conſciences,</hi> yet woful Experience demonſtrates it far otherwiſe, where Prejudice hath ſo hardened, that there is not ſo much ſoftneſs left for the Reaſon of Truth to take Impreſſion, or to receive that which pretains to Love and good Works, which is one end and product of our Meetings, diſtinctly and reſpe­ctively the Men Friends, who diſcharge their places, to whom the Godly Women alwayes give the Pre-eminence, as Brethren and Wo­men Friends in their places, not ſeeking Rule over one another, but that we may be Furtherers of one anothers Joy, and be each others <pb n="6" facs="tcp:100086:4"/>Crown of rejoycing in the Lord, meets in the Fear of the Lord, as in the Light of Chriſt Jeſus in our Conſciences, we received ſo to walk and do according to the Order of his Spirit, in which Chriſt is Preſent in our ſo meeting together; and the faithful can ſeal to the Teſtimony of it, to the Glory of his Name forever.</p>
+            <p>But wherein doth this great and heavy Impoſition on tender Con­ſciences conſiſt? One thing is, ſay ſome, <hi>Womens Meetings are impo­ſed: Why do you compel any contrary to their Freedom?</hi> No; all are left to the Meaſure of Truth in them, which is one and the ſame in all Conſciences; but Informing, Inſtructing and Exhorting, that every one be found in the Unity of our Duty, according to our Meaſure of the Light of Chriſt Jeſus, received to walk in it, as Members of his Body to diſcharge our Office, and Servants in Chriſts Family to do our Service, as the good Women of old were Helpers in the Work of the Goſpel, in ſuch things as are proper to us, as viſiting and Re­lieving the Sick, the Poor more eſpecially and Deſtitute amongſt us, that they be helped, as alſo the Poor Widdows, and Fatherleſs Or­phans, that the Diſtreſſed in all things be rightly anſwered, the Chil­dren at Nurſe be rightly educated, and well brought up, in order to a future well-being in the Creation. Again, we being met together, the Elder Women to inſtruct the Younger to all wholeſome things, Loving their own Husbands and Children, to be Diſcret, Chaſte, So­ber, keeping at Home, that the Word of God we profeſs be not Blaſphemed, &amp;c. with many other Matters pertinent to us, as a Meet­ing, whom the Lord bleſſeth with his Power and Preſence, to ſuſtain and bear us up againſt all our Oppoſſors.</p>
+            <p>Again, <hi>It is Impoſition</hi> (ſaith the Workers of Diſſention) <hi>for Marriages to offer their Intentions to the, Conſideration of the Womens Meeting.</hi> But pray conſider, in the Reaſon of Truth, a Marriage hath an equal Concern in the Woman, as in the Man; and 'tis as reaſonable to conſider the Woman may have as near a Concern in that matter with the Woman, as the Men on the other Part. And farther 'tis ſaid, <hi>'Tis Impoſition to go more than once to the Brethrens Meeting.</hi> But ſay we, that are in our wholeſome Practices in theſe Matters, and our Conſciences bear us witneſs in the ſight of God, our Eye is to the Honour of his Truth therein, therefore cannot encourage or allow People we are concerned with, to haſten or run together in Marriage, without due Care and Weightineſs, and that we are ſatisfied they are clear in all things touching their Marriage; as they ought to be, and for which end there ought to be a ſpecial care over Young People, to <pb n="7" facs="tcp:100086:4"/>whom the Aged had need to be Examples, both of Gravity and good Order, that Chriſt's Yoke be not caſt off by either, nor any falſe Li­berty of the Fleſh ſet up, encouraged or ſoothed among us; where­fore when they have propoſed their Intentions to one Meeting, for them to conſider, 'tis but reaſonable they have time to make Inquiry and Search into the Matter, ſo as they may be ſatisfied, that all things are ſweet and ſavory, that ſo as far as we can; we may be approved of by all in ſuch publick Affairs. <hi>Yea, But you will have ſuch to come the ſecond time, who are known to be clear.</hi> Yea, 'tis but reaſonable that ſuch ſhould manifeſt their Patience and Subjection, as good Examples to others, in theſe Needful and wholſome Practices, that are of good Report. And therefore we cannot approve ſuch in their willful En­deavours, to confound the Unity of our Order in this matter, under pretence of a burden to their Conſcience; for it was no burden to come once; for that Meeting in it ſelf being Good, Juſt, Honeſt, and of good Report, anſwering the Light of Chriſt Jeſus, which is one in all Conſciences; as well in the Ignorant, Blind, Miſ-guided and Erring, becauſe they will not be informed, the Light is the ſame there to reprove and inform, as it is in the Conſcience ruled and guided by the Light: Therefore pray conſider how that can contract a burden, <hi>(viz.)</hi> the going twice to ſuch a Meeting, as before-mentioned, how it can cauſe a burden on the Conſcience that is rightly informed, though it may be weak, but rather contradicts the Self-will that brings Bondage, and blinds the Conſciences: And are not ſuch rather by their oppoſing Will juſtly under the Reproof of the Church, and that Endeavours may be, that the underſtanding of ſuch be opened, and brought to a better Information in their Conſciences? For from the beginning we believe God's Witneſs in all Conſciences is one, &amp; its Reproofs of one Nature and Tendance, and its Inſtructions tending to one and the ſame end, and leads all, as they are guided by it, into one Way which allows of no falſe Liberty. <hi>Yea, but you are gone from the Beginning; for you had not this Way in the Beginning,</hi> ſay the Oppoſers. Pray conſider, above twenty ſix Years ago, in the South Parts we were a very little handful of People, gathered into the Belief of the Light of Chriſt Jeſus; ſo as it is that very Principle of Life in us, that we through Obedience to it might come to know God, as it is Eternal Life to know him, and rightly to worſhip him in his Spirit, and to be led by him into all Truth, and in Teſtimony of his own Spirit, in theſe our Practices, which ſince the Lord hath called us to, as we are a People called and gathered by the Lord. Pray Conſider, I ſpeak the <pb n="8" facs="tcp:100086:5"/>Truth of my Knowledge, and my Conſcience beareth me witneſs in what I have or ſhall ſay in this Matter, according to my ſmall Portion and Meaſure, in the Unity of the Grace received (I give God the Glory, in Humility of Soul before him, for my Preſervation to this Day) for pray, conſider, through the ſmallneſs of Number, in the beginning, we were not ſo capable as now for Order in outward af­fairs, nor was there then ſuch occaſion as now, but then the Grace of God grew amongſt us, and the mighty Arm of his Power was mani­feſted, by which many were gathered to believe in the Light of Jeſus Chriſt, it being that, and no other Name given under Heaven, by which men muſt be ſaved. Now in our little meaſure of Faith, in this One Way, One Name, One Truth, we were as in a threefold Cord of God's Love, joyned together; and as we encreaſed in Number, then occaſion begun of Services, of ſeveral kinds, which we were called in the Truth to conſider of, which are not ſo proper here to mention, but this one of Marriage. Before we were or could be ga­thered into the Order of Men and Womens Meeting: Upon the weight of the matter, a neceſſity did appear, that Friends in the Uni­ty of the Spirit and Wiſdom of God ſhould conſider of a Way where­in this matter might be tranſacted among our ſelves, in wholeſome Savoury Order, as the Truth might in no wiſe be Scandalized, but the Teſtimony of Truth born in it to the World: The moſt convenient Method then ſeen, for Truth's ſake, was, that Perſons declared their Intentions in our publick Meeting; after Friends were ſatisfied in their Marrying, they took each other in the publick Meeting: But after our Meetings grew more Numerous, and alſo diſorderly Spirits began to get up, which were not ſubject to the Truth, ſuch would intrude into our Meetings, to take each other; ſo then a Neceſſity in Truth required a further Method, for a more particular and ſtrict Care in this caſe: In all which we are not gone from the Light and Power of God, and firſt Principle; but in theſe and other things we have been in our good Order and Practices, and ſweet Fellow­ſhip managed by it; and I hope the tender in Conſcience will conſi­der, that are impartially Minded, that 'tis no Impoſition to inform and perſwade the Ignorant and Willful to ſubject in this or any other matter, that is Honeſt, Juſt, Savoury and of good Report, and law­ful to conform to, in the Unity of Love to practiſe, being no other but what is conſonant to the Conſcience, ſwayed and regulated by the Light of Chriſt Jeſus, in which is the true Liberty of the Con­ſcience, whether weak ſtrong: For I hope all will conclude, that <pb n="9" facs="tcp:100086:5"/>if the weak, in their little meaſure of Light, be kept Conformable to the Truth, that by the Light they cannot be led in their little mea­ſure to oppoſe the ſtrong in their greater meaſure; and may ſee fur­ther, that 'tis not reaſonable in Truth; for the Light cannot contra­dict it ſelf, and 'tis the ſame in the ſtrong as in the weak; But 'tis greatly to be lamented at this day, that to any that have known the Lord, and at any time fellowſhip among his People, the Croſs of Chriſt ſhould become ſo ineffectual, that ſuch Blindneſs is happened, that they ſhould put Self-oppoſing-will for a tender Conſcience: I do not ſay, they know it; but whether they do or no, I Pray God open their Underſtandings, and ſubdue that perverſe wilful Spirit and croſs Self­iſh humor, that works in oppoſition to a General Good and Peaceable Subjection amongſt the People of the Lord and Church of Chriſt. Surely theſe, though they may cry, <hi>Liberty of Conſcience,</hi> and pre­tend for tender Conſciences too, yet they are not fit Subjects for that Liberty that Chriſt redeems to, and ſets free in, to ſerve him with a Conſcience purged from Dead Works; nay, they that ſet themſelves, in their wilful prejudiced Oppoſition, againſt our Peaceable practiſing in the <hi>Church of God, Whatſoever things are true, whatſoever things are ho­neſt, whatſoever things are juſt, whatſoever things are pure whatſoever things pretain to Love, whatſoever things are of good report,</hi> Phil. 48. in which the God of Peace is with us now; that which is oppoſing our Unity there­in; would affright the ſimple ones with amazing expreſſions of Impoſi­tion, <hi>&amp;c.</hi> on weak Conſciences, and going from the Spirit of Life and Power into the Form; but bleſſed be the Lord that we have kept our Habitation in the Power, and held our Unity in that Spirit that gives us Life, thereby to live to God, and not to our ſelves, to ſerve him in that Form of Godlineſs, which the Power hath brought forth amongſt us, to live in the Unity of, and in his Spirit, the Founda­tion of our Preſervation, in Peace and Conſolation to this very day; and the Faith of ſuch remains firm in God's everlaſting Power, even as we received in the beginning of the breaking forth of the Day of the Lord, in which his ancient Arm and excellent Everlaſting Name was revealed, which is above every Name, into which a Number was ga­thered to believe and meet in, and the Lord was there, and is to this very day in the midſt of them, as Thouſands, and ten Thouſands can ſpeak to the Teſtimony of it; Oh! Glory, Obedience, and everlaſt­ing Dominion be aſcribed to his honourable and everlaſting Name over all forever; For the Kingdom of our God and his Chriſt, on whoſe Shoulders the Government is laid, ſhall prevail throug all Clouds of
+<pb n="10" facs="tcp:100086:6"/>oppſition, and Miſts of thick Darkneſs, that have riſen out of a miſ-guided underſtanding, through a prejudided mind, even to enſnare the weak and ſimple, and deceive the unſtable Soul, drawing from our <hi>Chriſtian</hi> Unitv, which is purely held in the Spirit.</p>
+            <p>And ſo, inaſmuch as the Envious Worker is ſuffered to proceed, that would even raze out the Foundation of Chriſt's Kingdom and Government, under which his Subjects do only own their <hi>Chriſtian</hi> Freedom and true Liberty of Conſcience; and whatſoever may be inſinuated to the contrary, by the Enemy of our Souls Well-fare in the particular, and the Churches Peace in the general, which God may ſuffer, it is for the Tryal of our Patience, and Manifeſtation and Confirmation of our Faith and Love one to another, and that it is in the Election in Chriſt Jeſus which cannot be deceived, whereby we are ſtrong in the Lord, and in the Power of his might is our confi­dence, that all ſhall work together for good to the Called, Choſen and Faithful, according to his purpoſe in Chriſt, and effectual work­ing of his Grace; And that the Lord in his Power and due time, will ariſe to clear the Inocency of his People, and Confound and lay Waſte all that which works in Oppoſition to the Proſperity and Unity of his Truth, and peaceable Government of Chriſt in his Church, which is formed in the Power of God.</p>
+            <p>
+               <hi>So all Glory we aſcribe to the one pure Power, in which we believed in the be­ginning, as the Foundation of Chriſt's Government and Kingdom that ſhall never have end.</hi>
+            </p>
+            <closer>
+               <signed>Anne Whitehead.</signed>
+            </closer>
+         </div>
+         <div type="account">
+            <head>A true Information of our bleſſed <hi>Womens Meeting</hi> (for we are bleſſed, and the Lord hath bleſſed us, praiſed be that Ever­laſting Arm of Power, that gathered us in the beginning to be a Meeting) betwixt three or four and twenty Years ago.</head>
+            <p>THus it was, after the Word of eternal Life and Salvation, and Light of Chriſt Jeſus in the Conſcience, had been preached in this City, for ſome time, many there were that received the Report, and was Convinced of it, many Poor as well as Rich; and oft-times Sickneſs and Weakneſs came upon many Poor Ones, and many Di­ſtreſſed and troubled in mind, when the Judgment of the Lord were <pb n="11" facs="tcp:100086:6"/>upon them; and they would often-times deſire the Servants of the Lord to come unto them, ſuch that had a Word in ſeaſon to ſpeak to them: And our dear Friend <hi>George Fox,</hi> that man of God, for ſo he is, the Lord has made him a Bleſſing in his Hand to many, praiſ­ed be the Lord forever, he was many times ſent for to many that were Sick and Weak in this City, and when he came to behold their want of things needful for them, ſome ſcarcely Clothes to cover them, or food to eat, or any one to look to them in their Diſtreſſes and Wants: The conſideration of it was weighty upon him, and he was moved of the Lord to adviſe to a Womans Meeting; and in order thereunto, he ſent for ſuch Women as he knew in this City; of which there are many living to this day, that can teſtifie to the ſame, who keep the Meeting in the Faith of that power that gathered us together; Bleſſed be the Lord forever who makes willing, and gives ſtrength to anſwer his Requirings in all things. And when dear
+<hi>G. Fox</hi> declared unto us what the Lord had made known unto him by his power, That there ſhould be a Womans Meeting, that ſo all the Sick, the Weak, the Widdows and the Fatherleſs, ſhould be minded and looked after in there Diſtreſſes that ſo there ſhould be no want amongſt the Lords people, but that all Diſtreſſed ones ſhould be minded and looked after: I can truly ſay, we had an anſwer of God in our hearts to his Teſti­mony, and my Soul was refreſhed at that time, and my Heart tendred, with many more of my Siſters, in the ſenſible feeling of that everlaſt­ing Life and power of the Lord, and his Univerſal Love that had moved in his dear Servant, to call us to this Work; and we joyned with him in the power of God in it: and ſo we appointed a Meeting, and after we had met for ſome time, we conſidered which way we ſhould anſwer the Neceſſities; and it aroſe in the Hearts of ſome Friends, <hi>That we ſhould have a conveniency, that ſo all the Faithful might offer as unto the Lord, not knowing what one another offers; that ſo from him they might expect their Reward;</hi> and it was concluded upon accordingly by the Meeting. And there were found among us ſome that were unwor­thy, that we could not relieve out of that which was provided for the Faithful; and yet they were ſuch that frequented our publick Mee­tings, and looked unto us for Charity; and we could not ſend them empty away; So we conſidered, and had a Weekly Gathering for them, that it might be fulfilled, as it is written, <hi>Do good unto all, but eſpecially to the Houſhold of Faith.</hi> And after ſome time of our meeting together, there came two of the Brethren, from the Mens Meeting to us, when we were met together, expreſſing their Unity with us, and <pb n="12" facs="tcp:100086:7"/>alſo did declare the mind of the Mens Meeting, (viz.) <hi>That they would be ready to help and aſſiſt us in any thing we ſhould deſire of them for Truth's Service.</hi> And ſo in ſome time it was agreed upon, in the Unity of the Truth, that the Men Friends ſhould pay the poor Friends Rents, and find them Coles, (ſuch as we Relieve, that were faithful) and put out ſuch poor Friends Children, as we ſhould offer to them; And this has been done almoſt from the beginning of our Meeting to this Day; be­ſides many other Services that fall in by the way, that cannot be omit­ted by us; And thus the Work of the Lord has been carried on and proſpered by the Arm of his everlaſting power, <hi>Magnified be his Name forever, who has found us worthy, and made us willing to anſwer whatſoever he requireth of us, according to the meaſure received of him.</hi> And this I do declare, that it was the ſame everlaſting quickning power, that firſt vi­ſited us by the Spirit of Judgment and of Burning, and wrought in our inward parts mightily, even as the little Leaven in the three Mea­ſures of Meal, to purifie and to cleanſe, purge out and put under all that was contrary to the Lord, and to make us Habitations fit to do his Will, that gathered us and made us a Meeting, and the ſame has been with us to this very day, bleſſed and magnified be his Name for­ever.</p>
+            <p>And I have a Word in my Heart to ſay unto yon all
+<hi>Back-ſliders, Ob­ſtructers, Oppoſers,</hi> and ſuch as countenance them ſecretly, of this our heavenly Order of Men and Womens Meetings, which the Lord by his power has ſet up, &amp; hath given Wiſdom according to true Knowledge, to act in the Church of Chriſt: you that have deſpiſed Dignities, and ſpeak Evil of the ſervants of the Lord, ſuch that faithfully have labour­ed amongſt us from the beginning, which the Lord hath found wor­thy of double Honour, giving ſome of them odd Names; Alas poor people! what will become of you, except you Repent? Conſider and ſee, whether ſome of you, could not once have plucked out your Eyes to have done them good? Oh what is the matter now! Has not the Serpent deceived you, and made you to eat of the forbidden Fruit, and let in the Spirit of Enmity that ſows Diſſention, and makes Diviſion in the Heritage of God; I do ſay, the Lord's Controverſie is with you, and your End will be Miſerable, except you come to Repentance; which my Soul hath often deſired for you: For I do well know, and the Lord hath ſealed it upon my Heart, That that Spirit which hath oppoſed the bleſſed Unity and Order of Truth, in theſe our Men and Womens Meetings, ſhall never proſper, nor they who are in it, in­wardly, to God, without Repentance; although outwardly they may <pb n="13" facs="tcp:100086:7"/>make never ſo great a ſhew with high Words and Notions. But ſaith the oppoſing Spirit, <hi>We are not againſt your Meetings in</hi> London;
+<hi>but we have no ſuch need in the Countries.</hi> Doubtleſs Chriſt's Churches in the Countries are one and the ſame as in the Cities, of which he is Head of his Churches there as in <hi>London;</hi> and ſurely his Members have the ſame Office and Service in kind and quality, although it may be not ſo much in quantity, which is reaſonable for the Impartial mind­ed to conſider.</p>
+            <p>And now, my Dear <hi>Friends</hi> and <hi>Siſters,</hi> in the bleſſed Truth of our God, you that have kept this our Meeting for many Years, and ſome of you from the firſt Day the Lord gathered us together, and made us a Meeting, I do believe that you with me can truly ſay, <hi>That we have felt the drawings of the Father's Love from time to time to this our Meeting, and his Bleſſing is amongſt us;</hi> Inſomuch as we dared not to ſuffer any of our own Occaſions to hinder us from this our Service, to which the Lord hath called us, but many times have preſſed through the croud of much Buſineſs; and many things that would have hin­dred, but we dared not to give way unto it, but in faithfulneſs anſwer the Lord's Requirings: The Lord hath been with us of a truth from time to time, his Living Powerful Preſence has been truly witneſſed amongſt us, to the refreſhing of our immortal Souls; which is a true Confirmation to us, that the Lord owns us in this our Service. And I can truly ſay, I had true Breathings to the Lord in the behalf of our younger Women, as they come to be ſettled in the World amongſt us, that they may be affected with the Work and Service of our Meet­ing as truly as we have been, and are to this day, and that they may be Heirs of the Grace of God with us. And this I can truly ſay, I have felt the zeal of the Lord to ariſe in my Heart, ſometimes in a Meeting, and ſometimes upon my Bed againſt this wicked Spirit, that hath ſought to lay waſte and bring to nought our bleſſed Meeting and heavenly Society and Order, which hath been ſet up amongſt us, and a true ſence hath been upon me of our dear Friends up and down the Nation, of their great Tryal and Exerciſe that hath been upon them, becauſe of this wicked dividing Spirit, and eſpecially in my Native Country (viz.)
+<hi>Wiltſhire.</hi> And this was the firſt moving cauſe in the Power of God in my Heart, to caſt in my Mite as my Teſtimony to that everlaſting Univerſal bleſſed Power, which the Lord hath made me a living Witneſs of, according to my meaſure: And this I can ſay, the more Oppoſition we have had againſt our Womens Meeting, the more we have increaſed in the Power of the Lord, and he hath bleſſed <pb n="14" facs="tcp:100086:8"/>our Endeavours and Services; and therefore <hi>Friends,</hi> be not diſcoura­ged, but go on in the Work and Service of the Lord in his Power, to his Glory, who hath honoured his Daughters of <hi>Abraham</hi> and <hi>Sion,</hi> in his heavenly Work; and therefore we cannot but ſerve the Lord in our Generation, and be Valiant for his Truth upon Earth, and our deſires are, that all our fellow Siſters in the Lords Truth may do the ſame every where throughout the whole Earth, where the Lord hath gathered them, ſo that all may live to the Praiſe and Glory of God, <hi>Amen.</hi>
+            </p>
+            <p>
+               <hi>And though we are Abſent in the Body, yet Preſent in Spirit with all the Faithful, with the Spirit joying, and beholding your ſpiritual Order in the Spirit, and ſteadfaſtneſs of your Faith in Chriſt Jeſus, the ſecond</hi> Adam, <hi>the Lord from Heaven, in whom our Peace and Reſs is.</hi>
+            </p>
+            <closer>
+               <signed>Mary Elſon.</signed>
+            </closer>
+         </div>
+         <trailer>THE END.</trailer>
+      </body>
+      <back>
+         <div type="publishers_advertisement">
+            <pb facs="tcp:100086:8"/>
+            <head>
+               <hi>BOOKS</hi> Printed and Sold by <hi>Andrew Sowle</hi> at the Crooked Billet in <hi>Holloway-Lane</hi> in <hi>Shoreditch.</hi>
+            </head>
+            <list>
+               <item>NO Croſs, No Crown: Or a Diſcourſe ſhewing the Na­ture and Diſcipline of the holy Croſs of Chriſt.</item>
+               <item>An Anſwer to a fooliſh Libel, called, <hi>The Quakers Opinions.</hi>
+               </item>
+               <item>
+                  <hi>England</hi>'s preſent Intereſt diſcovered, with honour to the Prince and ſafety to the People.</item>
+               <item>An Epiſtle to the Churches of Jeſus throughout the World.</item>
+               <item>An Epiſtle to the Children of Light.</item>
+               <item>An Addreſs to Proteſtants upon the preſent Conjuncture.</item>
+               <item>A brief ſtate and examination of Liberty Spiritual.</item>
+               <item>Wiſdom juſtified of her Children.</item>
+               <item>Reaſon againſt Railing, and Truth againſt Fiction.</item>
+               <item>Quakeriſm a new Nick-Name for Old Chriſtanity.</item>
+               <item>The Invalidity of <hi>J. F</hi>'s Reply.</item>
+               <item>Innocency with her open face.</item>
+               <item>An Epiſtle, containing a ſolemn Farewell,
+<hi>&amp;c.</hi> All writ by <hi>William Penn.</hi>
+               </item>
+               <item>The Chriſtian-Quaker and his divine Teſtimony vindicated by Scripture, Reaſon and Authorities; in two Parts. Writ By <hi>W. Penn</hi> and <hi>G. Whitehead.</hi>
+               </item>
+               <item>
+                  <hi>Due Order of Law and Juſtice pleaded, againſt Irregular and Arbi­trary Proceedings. By</hi> George Whitehead.</item>
+               <item>The Real <hi>Quaker</hi> a Real <hi>Proteſtant.</hi> By
+<hi>G. W.</hi>
+               </item>
+               <item>Judgment fixed upon the Accuſer of our Brethren; being an An­ſwer to <hi>W. Rogers, F. Bugg, J. Pennyman</hi> and <hi>J. Bullocks.</hi> By <hi>G. W.</hi>
+               </item>
+               <item>The Religious Aſſemblies of the People call'd
+<hi>Quakers</hi> vindicated,</item>
+               <item>A legal Examination of Abuſes of Law. Concerning 1.
+<hi>Forcible Entry;</hi> 2. <hi>Impriſonment without Warrant, how contrary to Law;</hi> 3. <hi>Riots, Routs and <g ref="char:V">Ʋ</g>nlawful Aſſemblies;</hi> 4. <hi>The publick Peace. and Breach of it;</hi> 5. <hi>Oppreſſion and Dureſs by Goals and Goalers, and what Priviledge the Law allows to Priſoners.</hi>
+               </item>
+               <item>The Priſoners Vindication, with a ſober Expoſtulation and Re­prehenſion of Perſecutors. By <hi>John Gratton.</hi>
+               </item>
+               <item>
+                  <hi>Lawſon</hi>'s Treatiſe concerning the ſeven Liberal Arts.</item>
+               <item>The Principles of Truth, or a declaration of our Faith, who are called <hi>Quakers.</hi>
+               </item>
+               <item>Univerſal Love. By <hi>W. Smith.</hi>
+               </item>
+               <pb facs="tcp:100086:9"/>
+               <item>A Lamentation over <hi>England,</hi> and faithful Warning to the In­habitants thereof. By <hi>William Bingley.</hi>
+               </item>
+               <item>An Epiſtle of Love and good Will to the called and choſen of God. By <hi>J. Songhurſt.</hi>
+               </item>
+               <item>
+                  <hi>Humphery Smith</hi>'s Books collected into one Volumn.</item>
+               <item>A Teſtimony againſt Tything among Chriſtians. By
+<hi>Richard Richardſon.</hi>
+               </item>
+               <item>The Foundation of Tythes ſhaken. Ey <hi>Thomas Elwood.</hi>
+               </item>
+               <item>Tythes ended by Chriſt. By <hi>W. Gibſon.</hi>
+               </item>
+               <item>The great Caſe of <hi>Tythes</hi> once more revived. By
+<hi>Fr. Howgill.</hi>
+               </item>
+               <item>A Treatiſes of Oaths, <hi>&amp;c.</hi>
+               </item>
+               <item>An Invitation of Love to all that hunger and thirſt after Righ­teouſneſe. By <hi>Iſabel Yeomans.</hi>
+               </item>
+               <item>Aplain Path-way opened to the ſimple hearted, for the anſwer­ing all Doubts and Objections, &amp;c. By <hi>S. Criſp.</hi>
+               </item>
+               <item>
+                  <hi>Jacob</hi> the Plain Man wreſtling with God, for perfect Victory and Dominion over <hi>Eſau,</hi> the Rough and Gunning Man. By <hi>Laurence Steel.</hi>
+               </item>
+               <item>The Anarchy of the <hi>Ranters,</hi> and other Libertines, in a twofold Apology for the Church and People called <hi>Quakers.</hi> By
+<hi>Robert Barclay.</hi>
+               </item>
+               <item>A Touch-Stone. By <hi>M. F.</hi>
+               </item>
+               <item>Something in Anſwer to them that ſay, the Quakers are no Chriſtians. By <hi>G. F.</hi>
+               </item>
+               <item>An Epiſtle to Friends every where. By <hi>James Parks.</hi>
+               </item>
+               <item>A Warning to <hi>London</hi> in particular. By <hi>J. P.</hi>
+               </item>
+               <item>A Warning to <hi>England</hi> in general. By <hi>J. P.</hi>
+               </item>
+               <item>A Teſtimony to the Lords Power and bleſſed appearance in and amongſt Children.</item>
+               <item>A new Book for Children to learn in.</item>
+               <item>A Scripture-Catechiſm for Children. By <hi>A. Rigge.</hi>
+               </item>
+               <item>Inſtructions for Right Spelling, and plain directions for reading and writing true <hi>Engliſh.</hi>
+               </item>
+               <item>
+                  <hi>Inſtitutiones Piatates:</hi> Containing plain and eaſie Rules for obtaining the <hi>Latine</hi> Tongue.</item>
+               <item>
+                  <hi>Compendium trium Linguarum,</hi> Latinae, Graecae
+<hi>&amp;</hi> Hebriaea: Couched and exhibited in a ſhort and eaſie Method for the uſe of the Studious and Chriſtian Youth.</item>
+            </list>
+            <pb facs="tcp:100086:9"/>
+         </div>
+      </back>
+   </text>
+</TEI>
