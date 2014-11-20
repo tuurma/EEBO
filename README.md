@@ -5,9 +5,9 @@ EEBO
 
 ###Sections###
 
-*Header Summary
-*Content Summary
-*Tag Usage Summary
+1. Header Summary
+1. Content Summary
+1. Tag Usage Summary
 
 ####Header Summary####
 
@@ -21,8 +21,8 @@ Content summary is a table of contents for the document. Where no internal hiera
 
 ####Tag Usage Summary####
 
-  *element list and frequenty plus nested attribute lists (with frequency and possibly distinct values)
-  *special interest statistics
+  * element list and frequenty plus nested attribute lists (with frequency and possibly distinct values)
+  * special interest statistics
     - entities summary: listPerson, listPlace etc
     - transcriptional features summary (gaps, corrections, expansions, regularization etc)
     - critical apparatus summary (listWit, number of apparatus entries etc)

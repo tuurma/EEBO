@@ -1,141 +1,140 @@
-<?xml version="1.0" encoding="UTF-8"?><n:ROOT xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:n="www.example.com">1. Element =  *TEI* : 1
+1. Element =  __TEI__ : 1
     
-1. Element =  *author* : 3
+1. Element =  __author__ : 3
     
-1. Element =  *availability* : 1
+1. Element =  __availability__ : 1
     
-1. Element =  *back* : 1
+1. Element =  __back__ : 1
     
-1. Element =  *bibl* : 1
+1. Element =  __bibl__ : 1
     
-1. Element =  *biblFull* : 1
+1. Element =  __biblFull__ : 1
     
-1. Element =  *body* : 1
+1. Element =  __body__ : 1
     
-1. Element =  *change* : 5
+1. Element =  __change__ : 5
     
-1. Element =  *closer* : 2
+1. Element =  __closer__ : 2
     
-1. Element =  *date* : 7
+1. Element =  __date__ : 7
     
-  *Attribute = *when*: 1 **2011-12**
+  *Attribute = _when_: 1 _2011-12_
     
-1. Element =  *desc* : 1
+1. Element =  __desc__ : 1
     
-1. Element =  *div* : 4
+1. Element =  __div__ : 4
     
-  *Attribute = *type*: 4 **title_page letter account publishers_advertisement**
+  *Attribute = _type_: 4 _title_page letter account publishers_advertisement_
     
-1. Element =  *editorialDecl* : 1
+1. Element =  __editorialDecl__ : 1
     
-  *Attribute = *n*: 1 **4**
+  *Attribute = _n_: 1 _4_
     
-1. Element =  *encodingDesc* : 1
+1. Element =  __encodingDesc__ : 1
     
-1. Element =  *extent* : 2
+1. Element =  __extent__ : 2
     
-1. Element =  *fileDesc* : 1
+1. Element =  __fileDesc__ : 1
     
-1. Element =  *front* : 1
+1. Element =  __front__ : 1
     
-1. Element =  *g* : 5
+1. Element =  __g__ : 5
     
-  *Attribute = *ref*: 5 **char:V**
+  *Attribute = _ref_: 5 _char:V_
     
-1. Element =  *gap* : 1
+1. Element =  __gap__ : 1
     
-  *Attribute = *reason*: 1 **illegible**
+  *Attribute = _reason_: 1 _illegible_
     
-  *Attribute = *resp*: 1 **#OXF**
+  *Attribute = _resp_: 1 _#OXF_
     
-  *Attribute = *extent*: 1 **2 letters**
+  *Attribute = _extent_: 1 _2 letters_
     
-1. Element =  *head* : 3
+1. Element =  __head__ : 3
     
-1. Element =  *hi* : 123
+1. Element =  __hi__ : 123
     
-1. Element =  *idno* : 6
+1. Element =  __idno__ : 6
     
-  *Attribute = *type*: 6 **DLPS STC EEBO-CITATION OCLC VID**
+  *Attribute = _type_: 6 _DLPS STC EEBO-CITATION OCLC VID_
     
-1. Element =  *item* : 46
+1. Element =  __item__ : 46
     
-1. Element =  *keywords* : 1
+1. Element =  __keywords__ : 1
     
-  *Attribute = *scheme*: 1 **http://authorities.loc.gov/**
+  *Attribute = _scheme_: 1 _http://authorities.loc.gov/_
     
-1. Element =  *label* : 5
+1. Element =  __label__ : 5
     
-1. Element =  *langUsage* : 1
+1. Element =  __langUsage__ : 1
     
-1. Element =  *language* : 1
+1. Element =  __language__ : 1
     
-  *Attribute = *ident*: 1 **eng**
+  *Attribute = _ident_: 1 _eng_
     
-1. Element =  *list* : 1
+1. Element =  __list__ : 1
     
-1. Element =  *listPrefixDef* : 1
+1. Element =  __listPrefixDef__ : 1
     
-1. Element =  *note* : 9
+1. Element =  __note__ : 9
     
-  *Attribute = *place*: 4 **margin**
+  *Attribute = _place_: 4 _margin_
     
-1. Element =  *notesStmt* : 2
+1. Element =  __notesStmt__ : 2
     
-1. Element =  *opener* : 1
+1. Element =  __opener__ : 1
     
-1. Element =  *p* : 21
+1. Element =  __p__ : 21
     
-1. Element =  *pb* : 18
+1. Element =  __pb__ : 18
     
-  *Attribute = *facs*: 18 **tcp:100086:1 tcp:100086:2 tcp:100086:3 tcp:100086:4 tcp:100086:5 tcp:100086:6 tcp:100086:7 tcp:100086:8 tcp:100086:9**
+  *Attribute = _facs_: 18 _tcp:100086:1 tcp:100086:2 tcp:100086:3 tcp:100086:4 tcp:100086:5 tcp:100086:6 tcp:100086:7 tcp:100086:8 tcp:100086:9_
     
-  *Attribute = *n*: 12 **3 4 5 6 7 8 9 10 11 12 13 14**
+  *Attribute = _n_: 12 _3 4 5 6 7 8 9 10 11 12 13 14_
     
-1. Element =  *prefixDef* : 2
+1. Element =  __prefixDef__ : 2
     
-  *Attribute = *ident*: 2 **tcp char**
+  *Attribute = _ident_: 2 _tcp char_
     
-  *Attribute = *matchPattern*: 2 **([0-9\-]+):([0-9IVX]+) (.+)**
+  *Attribute = _matchPattern_: 2 _([0-9\-]+):([0-9IVX]+) (.+)_
     
-  *Attribute = *replacementPattern*: 2 **http://eebo.chadwyck.com/downloadtiff?vid=$1&amp;page=$2 https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1**
+  *Attribute = _replacementPattern_: 2 _http://eebo.chadwyck.com/downloadtiff?vid=$1&page=$2 https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1_
     
-1. Element =  *profileDesc* : 1
+1. Element =  __profileDesc__ : 1
     
-1. Element =  *projectDesc* : 1
+1. Element =  __projectDesc__ : 1
     
-1. Element =  *pubPlace* : 2
+1. Element =  __pubPlace__ : 2
     
-1. Element =  *publicationStmt* : 2
+1. Element =  __publicationStmt__ : 2
     
-1. Element =  *publisher* : 2
+1. Element =  __publisher__ : 2
     
-1. Element =  *q* : 1
+1. Element =  __q__ : 1
     
-1. Element =  *revisionDesc* : 1
+1. Element =  __revisionDesc__ : 1
     
-1. Element =  *salute* : 1
+1. Element =  __salute__ : 1
     
-1. Element =  *seriesStmt* : 1
+1. Element =  __seriesStmt__ : 1
     
-1. Element =  *signed* : 2
+1. Element =  __signed__ : 2
     
-1. Element =  *sourceDesc* : 1
+1. Element =  __sourceDesc__ : 1
     
-1. Element =  *teiHeader* : 1
+1. Element =  __teiHeader__ : 1
     
-1. Element =  *term* : 1
+1. Element =  __term__ : 1
     
-1. Element =  *text* : 1
+1. Element =  __text__ : 1
     
-  *Attribute = *xml:lang*: 1 **eng**
+  *Attribute = _xml:lang_: 1 _eng_
     
-1. Element =  *textClass* : 1
+1. Element =  __textClass__ : 1
     
-1. Element =  *title* : 3
+1. Element =  __title__ : 3
     
-1. Element =  *titleStmt* : 2
+1. Element =  __titleStmt__ : 2
     
-1. Element =  *trailer* : 1
+1. Element =  __trailer__ : 1
     
-</n:ROOT>

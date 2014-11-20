@@ -46,8 +46,10 @@ $Id$
    
 -->
     <!-- 
-Read TEI P5 documents and construct markdown readme file with summary of the file textual content and tag usage
+Read TEI P5 document and construct markdown readme file with summary of the file textual content and tag usage
 -->
+    <xsl:output method="text"/>
+    
     <!-- turn on debug messages -->
     <xsl:param name="debug">true</xsl:param>
     <!-- turn on messages -->
@@ -86,15 +88,15 @@ Read TEI P5 documents and construct markdown readme file with summary of the fil
                 <xsl:for-each-group select="//*" group-by="local-name()">
                     <xsl:sort select="local-name()"/>
 
-                    <xsl:text>1. Element = </xsl:text> *<xsl:value-of select="current-grouping-key()"/>* <xsl:text>: </xsl:text><xsl:value-of select="count(current-group())"/>
+                    <xsl:text>1. Element = </xsl:text> __<xsl:value-of select="current-grouping-key()"/> <xsl:text>__ : </xsl:text><xsl:value-of select="count(current-group())"/>
 <xsl:text>
     
 </xsl:text>    
                   <xsl:variable name="eName" select="current-grouping-key()"/>
                         <xsl:for-each-group select="//*[local-name()=$eName]/@*" group-by="name()">
                           
-                                <xsl:text>  *Attribute = *</xsl:text><xsl:value-of select="current-grouping-key()"/><xsl:text>*: </xsl:text>
-                                <xsl:value-of select="count(current-group())"/><xsl:text> **</xsl:text><xsl:value-of select="distinct-values(current-group())"/><xsl:text>**</xsl:text>
+                                <xsl:text>  *Attribute = _</xsl:text><xsl:value-of select="current-grouping-key()"/><xsl:text>_: </xsl:text>
+                                <xsl:value-of select="count(current-group())"/><xsl:text> _</xsl:text><xsl:value-of select="distinct-values(current-group())"/><xsl:text>_</xsl:text>
                             <xsl:text>
     
 </xsl:text>    
