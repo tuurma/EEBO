@@ -75,15 +75,15 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                             select="base-uri(.)"/>, root element is <xsl:value-of select="name(.)"/>        </xsl:message>
           </xsl:if>
             
-            <xsl:text>#</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/titleStmt/title"/><xsl:text>#&#xa;</xsl:text>
+            <xsl:text>&#xa;#</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/titleStmt/title"/><xsl:text>#&#xa;</xsl:text>
             <xsl:for-each select="/TEI/teiHeader/fileDesc/titleStmt/author">
-                <xsl:text>##</xsl:text><xsl:value-of select="."/><xsl:text>##&#xa;</xsl:text>
+                <xsl:text>&#xa;##</xsl:text><xsl:value-of select="."/><xsl:text>##&#xa;</xsl:text>
             </xsl:for-each>
 
             <xsl:for-each select="/TEI/teiHeader/fileDesc/titleStmt/*[not(author) and not(title)]">
                 <xsl:text></xsl:text><xsl:value-of select="."/><xsl:text>&#xa;</xsl:text>
             </xsl:for-each>
-            <xsl:text>##Header Summary##&#xa;</xsl:text>
+            <xsl:text>&#xa;##Header Summary##&#xa;</xsl:text>
             <xsl:for-each select="/TEI/teiHeader/*[not(fileDesc)]">
                 <xsl:apply-templates mode="header"/>
             </xsl:for-each>
@@ -111,7 +111,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                 <xsl:with-param name="label">Back</xsl:with-param>
             </xsl:call-template>
             
-            <xsl:text>##Tag Usage Summary##&#xa;</xsl:text>
+            <xsl:text>&#xa;##Tag Usage Summary##&#xa;</xsl:text>
            
             <xsl:call-template name="tagUsage">
                 <xsl:with-param name="set">
@@ -200,7 +200,8 @@ Read TEI P5 document and construct markdown readme file with summary of the file
     <xsl:template name="tagUsage">
         <xsl:param name="set"/>
         <xsl:param name="label"/>
-        <xsl:text>###</xsl:text>
+        
+        <xsl:text>&#xa;###</xsl:text>
         <xsl:value-of select="$label"/>
         <xsl:text>###</xsl:text>
         <xsl:text>&#xa;</xsl:text>
@@ -208,7 +209,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
         <xsl:for-each-group select="$set/*" group-by="local-name()">
             <xsl:sort select="local-name()"/>
             
-            <xsl:text>1.  __</xsl:text><xsl:value-of select="current-grouping-key()"/> <xsl:text>__: </xsl:text><xsl:value-of select="count(current-group())"/>
+            <xsl:text>&#xa;1.  __</xsl:text><xsl:value-of select="current-grouping-key()"/> <xsl:text>__: </xsl:text><xsl:value-of select="count(current-group())"/>
             <xsl:text>&#xa;</xsl:text>    
             <xsl:variable name="eName" select="current-grouping-key()"/>
             <xsl:for-each-group select="$set//*[local-name()=$eName]/@*" group-by="name()">
