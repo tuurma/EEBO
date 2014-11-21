@@ -101,6 +101,8 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                 </xsl:with-param>
                 <xsl:with-param name="label">Header Tag Usage</xsl:with-param>
             </xsl:call-template>
+
+            <xsl:text>&#xa;</xsl:text>
             
             <xsl:call-template name="tagUsage">
                 <xsl:with-param name="set">
