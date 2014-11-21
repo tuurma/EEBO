@@ -4,19 +4,23 @@ An epistle for true love, unity, and order in the Church of Christ against the s
 Whitehead, Anne, 1624-1686.
 ##Content Summary##
 
-      ###Front###
+      
+###Front###
 
          
             
             
             AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Ch
-      ###Body###
-###An EPISTLE for true Love, Ʋnity and Order, &c. A true Information of our bleſſed Womens Meeting (for we are bleſſed, and the Lord hath bleſſed us, praiſed be that Ever­laſting Arm of Power, that gathered us in the beginning to be a Meeting) betwixt three or four and twenty Years ago.###
+      
+###Body###
+
+###An EPISTLE for true Love, Ʋnity and Order, &c.###
+###A true Information of our bleſſed Womens Meeting (for we are bleſſed, and the Lord hath bleſſed us, praiſed be that Ever­laſting Arm of Power, that gathered us in the beginning to be a Meeting) betwixt three or four and twenty Years ago.###
 An EPISTLE for true Love, Ʋnity and Order, &c. Dear Friends; VVHom the Lord hath called out of the W
-      ###Back###
-###
-               BOOKS Printed and Sold by Andrew Sowle at the Crooked Billet in Holloway-Lane in Shoreditch.
-            ###
+      
+###Back###
+
+###BOOKS Printed and Sold by Andrew Sowle at the Crooked Billet in Holloway-Lane in Shoreditch.###
 BOOKS Printed and Sold by Andrew Sowle at the Crooked Billet in Holloway-Lane in Shoreditch. NO Croſ
    ##Tag Usage Summary##
 ###Header Tag Usage###

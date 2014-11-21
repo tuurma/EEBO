@@ -182,7 +182,10 @@ Read TEI P5 document and construct markdown readme file with summary of the file
 
         <xsl:choose>
             <xsl:when test="$set/div/head">
-                <xsl:value-of select="$hdng"/><xsl:value-of select="$set/div/head"/><xsl:value-of select="$hdng"/><xsl:text>&#xa;</xsl:text>
+                <xsl:text>&#xa;</xsl:text>
+                <xsl:for-each select="$set/div/head">
+                <xsl:value-of select="$hdng"/><xsl:value-of select="normalize-space(.)"/><xsl:value-of select="$hdng"/><xsl:text>&#xa;</xsl:text>
+                </xsl:for-each>
                 
                 <xsl:if test="$level&lt;4">
                     <xsl:call-template name="tochead">
