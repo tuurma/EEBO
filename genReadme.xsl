@@ -56,7 +56,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
     
 
     <xsl:key name="Atts" match="@*" use="local-name(parent::*)"/>
-    <xsl:key name="attVals" match="@*" use="concat(local-name(parent::*),local-name())"/>
+    <xsl:key name="attVals" match="@*" use="concat(local-name(parent::*),local-name(),string())"/>
     <xsl:key name="IDENTS" use="@ident" match="*[@ident]"/>
     <xsl:key name="All" match="*" use="'1'"/>
     <xsl:key name="AllTEI" match="tei:*" use="t"/>
@@ -210,10 +210,12 @@ Read TEI P5 document and construct markdown readme file with summary of the file
             <xsl:text>&#xa;1.  __</xsl:text><xsl:value-of select="current-grouping-key()"/> <xsl:text>__: </xsl:text><xsl:value-of select="count(current-group())"/>
             <xsl:text>&#xa;</xsl:text>    
             <xsl:variable name="eName" select="current-grouping-key()"/>
-            <xsl:for-each-group select="$set//*[local-name()=$eName]/@*" group-by="name()">
+            <xsl:for-each-group select="current-group()/@*" group-by="name()">
                 
                 <xsl:text>  * @_</xsl:text><xsl:value-of select="current-grouping-key()"/><xsl:text>_: </xsl:text>
-                <xsl:value-of select="count(current-group())"/><xsl:text> _</xsl:text><xsl:value-of select="distinct-values(current-group())"/><xsl:text>_</xsl:text>
+                <xsl:value-of select="count(current-group())"/><xsl:text> | _</xsl:text>
+                <xsl:for-each select="distinct-values(current-group())">'<xsl:value-of select="."/>'<xsl:text> </xsl:text></xsl:for-each>
+                <xsl:text>_</xsl:text>
                 <xsl:text>&#xa;</xsl:text>    
             </xsl:for-each-group>
             

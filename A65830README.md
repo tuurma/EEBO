@@ -32,10 +32,10 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt. Againſt the
 1.  __change__: 5
 
 1.  __date__: 7
-  * @_when_: 3 _2011-12_
+  * @_when_: 1 | _'2011-12' _
 
 1.  __editorialDecl__: 1
-  * @_n_: 2 _4_
+  * @_n_: 1 | _'4' _
 
 1.  __encodingDesc__: 1
 
@@ -44,17 +44,17 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt. Againſt the
 1.  __fileDesc__: 1
 
 1.  __idno__: 6
-  * @_type_: 18 _DLPS STC EEBO-CITATION OCLC VID_
+  * @_type_: 6 | _'DLPS' 'STC' 'EEBO-CITATION' 'OCLC' 'VID' _
 
 1.  __keywords__: 1
-  * @_scheme_: 3 _http://authorities.loc.gov/_
+  * @_scheme_: 1 | _'http://authorities.loc.gov/' _
 
 1.  __label__: 5
 
 1.  __langUsage__: 1
 
 1.  __language__: 1
-  * @_ident_: 3 _eng_
+  * @_ident_: 1 | _'eng' _
 
 1.  __listPrefixDef__: 1
 
@@ -65,9 +65,9 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt. Againſt the
 1.  __p__: 5
 
 1.  __prefixDef__: 2
-  * @_ident_: 6 _tcp char_
-  * @_matchPattern_: 6 _([0-9\-]+):([0-9IVX]+) (.+)_
-  * @_replacementPattern_: 6 _http://eebo.chadwyck.com/downloadtiff?vid=$1&page=$2 https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1_
+  * @_ident_: 2 | _'tcp' 'char' _
+  * @_matchPattern_: 2 | _'([0-9\-]+):([0-9IVX]+)' '(.+)' _
+  * @_replacementPattern_: 2 | _'http://eebo.chadwyck.com/downloadtiff?vid=$1&page=$2' 'https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1' _
 
 1.  __profileDesc__: 1
 
@@ -108,17 +108,17 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt. Againſt the
 1.  __desc__: 1
 
 1.  __div__: 4
-  * @_type_: 8 _title_page letter account publishers_advertisement_
+  * @_type_: 4 | _'title_page' 'letter' 'account' 'publishers_advertisement' _
 
 1.  __front__: 1
 
 1.  __g__: 5
-  * @_ref_: 25 _char:V_
+  * @_ref_: 5 | _'char:V' _
 
 1.  __gap__: 1
-  * @_reason_: 5 _illegible_
-  * @_resp_: 5 _#OXF_
-  * @_extent_: 5 _2 letters_
+  * @_reason_: 1 | _'illegible' _
+  * @_resp_: 1 | _'#OXF' _
+  * @_extent_: 1 | _'2 letters' _
 
 1.  __head__: 3
 
@@ -129,15 +129,15 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt. Againſt the
 1.  __list__: 1
 
 1.  __note__: 4
-  * @_place_: 16 _margin_
+  * @_place_: 4 | _'margin' _
 
 1.  __opener__: 1
 
 1.  __p__: 16
 
 1.  __pb__: 18
-  * @_facs_: 67 _tcp:100086:1 tcp:100086:2 tcp:100086:3 tcp:100086:4 tcp:100086:5 tcp:100086:6 tcp:100086:7 tcp:100086:8 tcp:100086:9_
-  * @_n_: 48 _3 4 5 6 7 8 9 10 11 12 13 14_
+  * @_facs_: 18 | _'tcp:100086:1' 'tcp:100086:2' 'tcp:100086:3' 'tcp:100086:4' 'tcp:100086:5' 'tcp:100086:6' 'tcp:100086:7' 'tcp:100086:8' 'tcp:100086:9' _
+  * @_n_: 12 | _'3' '4' '5' '6' '7' '8' '9' '10' '11' '12' '13' '14' _
 
 1.  __q__: 1
 
