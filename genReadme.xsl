@@ -83,14 +83,14 @@ Read TEI P5 document and construct markdown readme file with summary of the file
             <xsl:for-each select="/TEI/teiHeader/fileDesc/titleStmt/*[not(author) and not(title)]">
                 <xsl:text></xsl:text><xsl:value-of select="."/><xsl:text>&#xa;</xsl:text>
             </xsl:for-each>
-            
+<!--            
             <xsl:text>##Header Summary##&#xa;</xsl:text>
             <xsl:for-each select="/TEI/teiHeader/*[not(fileDesc)]">
                 <xsl:apply-templates mode="header"/>
             </xsl:for-each>
-            
+-->            
             <xsl:text>##Content Summary##&#xa;</xsl:text>
-            
+                <xsl:apply-templates select="/TEI/text" mode="toc"/>
             
  
             <xsl:text>##Tag Usage Summary##&#xa;</xsl:text>
@@ -119,6 +119,84 @@ Read TEI P5 document and construct markdown readme file with summary of the file
     <xsl:template match="note | title | projectDesc" mode="header">
         <xsl:text>*</xsl:text><xsl:value-of select="name()"/><xsl:text>*</xsl:text><xsl:apply-templates mode="header"/><xsl:text>&#xa;</xsl:text>   
     </xsl:template>
+
+    <xsl:template match="front" mode="toc">
+        <xsl:text>###Front###&#xa;</xsl:text>
+        <xsl:choose>
+        <xsl:when test="div[head]">
+            <xsl:call-template name="tochead">
+                <xsl:with-param name="level" select="1"/>
+                <xsl:with-param name="set"><xsl:copy-of select="div"/></xsl:with-param>
+            </xsl:call-template>
+        </xsl:when>
+        <xsl:otherwise>
+                <xsl:value-of select="substring(string(.), 1, 100)"/>
+        </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <xsl:template match="back" mode="toc">
+        <xsl:text>###Back###&#xa;</xsl:text>
+        <xsl:choose>
+            <xsl:when test="div[head]">
+                <xsl:call-template name="tochead">
+                    <xsl:with-param name="level" select="1"/>
+                    <xsl:with-param name="set"><xsl:copy-of select="div"/></xsl:with-param>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="substring(normalize-space(.), 1, 100)"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+
+<xsl:template match="body" mode="toc">
+    <xsl:text>###Body###&#xa;</xsl:text>
+    <xsl:choose>
+        <xsl:when test="div[head]">
+            <xsl:call-template name="tochead">
+                <xsl:with-param name="level" select="1"/>
+                <xsl:with-param name="set"><xsl:copy-of select="div"/></xsl:with-param>
+            </xsl:call-template>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:value-of select="substring(normalize-space(.), 1, 100)"/>
+        </xsl:otherwise>
+    </xsl:choose>
+    
+</xsl:template>
+
+    <xsl:template name="tochead">
+        <xsl:param name="level"/>
+        <xsl:param name="set"/>
+        
+        <xsl:variable name="hdng">
+        <xsl:choose>
+            <xsl:when test="$level=1">###</xsl:when>
+            <xsl:when test="$level=2">####</xsl:when>
+            <xsl:when test="$level=3">#####</xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+        </xsl:variable>
+
+        <xsl:choose>
+            <xsl:when test="$set/div/head">
+                <xsl:value-of select="$hdng"/><xsl:value-of select="$set/div/head"/><xsl:value-of select="$hdng"/><xsl:text>&#xa;</xsl:text>
+                
+                <xsl:if test="$level&lt;4">
+                    <xsl:call-template name="tochead">
+                        <xsl:with-param name="level" select="$level + 1"/>
+                        <xsl:with-param name="set"><xsl:copy-of select="$set/div/div"/></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="substring(normalize-space(.), 1, 100)"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
 
     <xsl:template name="tagUsage">
         <xsl:param name="set"/>
