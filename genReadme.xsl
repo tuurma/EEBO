@@ -121,7 +121,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
     </xsl:template>
 
     <xsl:template match="front" mode="toc">
-        <xsl:text>###Front###&#xa;</xsl:text>
+        <xsl:text>&#xa;###Front###&#xa;</xsl:text>
         <xsl:choose>
         <xsl:when test="div[head]">
             <xsl:call-template name="tochead">
@@ -136,7 +136,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
     </xsl:template>
 
     <xsl:template match="back" mode="toc">
-        <xsl:text>###Back###&#xa;</xsl:text>
+        <xsl:text>&#xa;###Back###&#xa;</xsl:text>
         <xsl:choose>
             <xsl:when test="div[head]">
                 <xsl:call-template name="tochead">
@@ -152,7 +152,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
     
 
 <xsl:template match="body" mode="toc">
-    <xsl:text>###Body###&#xa;</xsl:text>
+    <xsl:text>&#xa;###Body###&#xa;</xsl:text>
     <xsl:choose>
         <xsl:when test="div[head]">
             <xsl:call-template name="tochead">
