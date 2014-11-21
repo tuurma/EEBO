@@ -5,7 +5,8 @@ Whitehead, Anne, 1624-1686.
 ##Header Summary##
 
          
-            *title*An epistle for true love, unity, and order in the Church of Christ against the spirit of discord, disorder and confusion &c. : recommended to friends in truth chiefly for the sake of the weak and unstable minded for information and encouragement in our Christian unity and society, held in the spirit of Christ both in faith and practice / by two servants of the Church according to our measures, Anne Whitehead, Mary Elson.
+            
+*title*An epistle for true love, unity, and order in the Church of Christ against the spirit of discord, disorder and confusion &c. : recommended to friends in truth chiefly for the sake of the weak and unstable minded for information and encouragement in our Christian unity and society, held in the spirit of Christ both in faith and practice / by two servants of the Church according to our measures, Anne Whitehead, Mary Elson.
 
             Whitehead, Anne, 1624-1686.
          
@@ -25,21 +26,26 @@ Whitehead, Anne, 1624-1686.
             
          
          
-            *title*Early English books online.
+            
+*title*Early English books online.
 
          
          
-            *note*(EEBO-TCP ; phase 2, no. A65830)
+            
+*note*(EEBO-TCP ; phase 2, no. A65830)
 
-            *note*Transcribed from: (Early English Books Online ; image set 100086)
+            
+*note*Transcribed from: (Early English Books Online ; image set 100086)
 
-            *note*Images scanned from microfilm: (Early English books, 1641-1700 ; 1559:33)
+            
+*note*Images scanned from microfilm: (Early English books, 1641-1700 ; 1559:33)
 
          
          
             
                
-                  *title*An epistle for true love, unity, and order in the Church of Christ against the spirit of discord, disorder and confusion &c. : recommended to friends in truth chiefly for the sake of the weak and unstable minded for information and encouragement in our Christian unity and society, held in the spirit of Christ both in faith and practice / by two servants of the Church according to our measures, Anne Whitehead, Mary Elson.
+                  
+*title*An epistle for true love, unity, and order in the Church of Christ against the spirit of discord, disorder and confusion &c. : recommended to friends in truth chiefly for the sake of the weak and unstable minded for information and encouragement in our Christian unity and society, held in the spirit of Christ both in faith and practice / by two servants of the Church according to our measures, Anne Whitehead, Mary Elson.
 
                   Whitehead, Anne, 1624-1686.
                   Elson, Mary, 1623 or 4-1707.
@@ -51,15 +57,18 @@ Whitehead, Anne, 1624-1686.
                   [1680?]
                
                
-                  *note*Date of publication suggested by Wing.
+                  
+*note*Date of publication suggested by Wing.
 
-                  *note*Reproduction of original in the Harvard University Library.
+                  
+*note*Reproduction of original in the Harvard University Library.
 
                
             
          
       
-         *projectDesc*
+         
+*projectDesc*
             Created by converting TCP files to TEI P5 using tcp2tei.xsl,
       TEI @ Oxford.
       
@@ -99,28 +108,21 @@ Whitehead, Anne, 1624-1686.
          
             2011-06
             pfsBatch review (QC) and XML conversion
-      ##Content Summary##
-
       
-###Front###
+##Content Summary##
 
-         
-            
-            
-            AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Ch
-      
-###Body###
+#####Front#####
+AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt. Againſt the Spirit of Diſcord, Di
+#####Body#####
 
 1. An EPISTLE for true Love, Ʋnity and Order, &c.
 
 1. A true Information of our bleſſed Womens Meeting (for we are bleſſed, and the Lord hath bleſſed us, praiſed be that Ever­laſting Arm of Power, that gathered us in the beginning to be a Meeting) betwixt three or four and twenty Years ago.
 
-      
-###Back###
+#####Back#####
 
 1. BOOKS Printed and Sold by Andrew Sowle at the Crooked Billet in Holloway-Lane in Shoreditch.
-
-   ##Tag Usage Summary##
+##Tag Usage Summary##
 ###Header Tag Usage###
 1.  __author__: 3
 1.  __availability__: 1
