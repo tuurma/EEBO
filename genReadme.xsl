@@ -77,8 +77,20 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                 
                     </xsl:if>
                 </xsl:for-each>
-            <xsl:text>#</xsl:text><xsl:value-of select="/TEI/teiHeader//titleStmt/title"/><xsl:text>#&#xa;</xsl:text>
+            <xsl:text>#</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/titleStmt/title"/><xsl:text>#&#xa;</xsl:text>
+            <xsl:for-each select="/TEI/teiHeader/fileDesc/titleStmt/author">
+                <xsl:text>##</xsl:text><xsl:value-of select="."/><xsl:text>##&#xa;</xsl:text>
+            </xsl:for-each>
+
+            <xsl:for-each select="/TEI/teiHeader/fileDesc/titleStmt/*[not(author) and not(title)]">
+                <xsl:text></xsl:text><xsl:value-of select="."/><xsl:text>&#xa;</xsl:text>
+            </xsl:for-each>
+            
             <xsl:text>##Header Summary##&#xa;</xsl:text>
+            <xsl:for-each select="/TEI/teiHeader/*[not(fileDesc)]">
+                <xsl:apply-templates mode="header"/>
+            </xsl:for-each>
+            
             <xsl:text>##Content Summary##&#xa;</xsl:text>
             
             
@@ -104,7 +116,11 @@ Read TEI P5 document and construct markdown readme file with summary of the file
         
         <xsl:copy-of select="$all"/>
     </xsl:template>
-    
+
+    <xsl:template match="note | title | projectDesc" mode="header">
+        <xsl:text>*</xsl:text><xsl:value-of select="name()"/><xsl:text>*</xsl:text><xsl:apply-templates mode="header"/><xsl:text>&#xa;</xsl:text>   
+    </xsl:template>
+
     <xsl:template name="tagUsage">
         <xsl:param name="set"/>
         <xsl:param name="label"/>
@@ -126,7 +142,6 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                 <xsl:text>&#xa;</xsl:text>    
             </xsl:for-each-group>
         </xsl:for-each-group>
-        
 
     </xsl:template>
     
