@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:n="www.example.com"
+    xpath-default-namespace="http://www.tei-c.org/ns/1.0" 
     exclude-result-prefixes="xs"
     version="2.0">
     
@@ -41,10 +42,6 @@ $Id$
 
 20014, TEI Consortium
 -->
-    <!-- typical usage:
-   saxon -o:readme.md generateReadme.xsl 
-   
--->
     <!-- 
 Read TEI P5 document and construct markdown readme file with summary of the file textual content and tag usage
 -->
@@ -60,7 +57,6 @@ Read TEI P5 document and construct markdown readme file with summary of the file
     <xsl:key name="attVals" match="@*" use="concat(local-name(parent::*),local-name())"/>
     <xsl:key name="IDENTS" use="@ident" match="*[@ident]"/>
     <xsl:key name="All" match="*" use="'1'"/>
-    <xsl:key name="AllNew" match="*" use="concat('1', 'a')"/>
     <xsl:key name="AllTEI" match="tei:*" use="t"/>
     <xsl:key name="E" match="*" use="local-name()"/>
     <xsl:key name="Elements" match="*" use="'1'"/>
@@ -74,7 +70,6 @@ Read TEI P5 document and construct markdown readme file with summary of the file
    
         
         <xsl:variable name="all">
-            <n:ROOT>
                 <xsl:for-each select="/tei:*">
                     <xsl:if test="$verbose='true'">
                         <xsl:message>processing <xsl:value-of
@@ -82,30 +77,57 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                 
                     </xsl:if>
                 </xsl:for-each>
-                
+            <xsl:text>#</xsl:text><xsl:value-of select="/TEI/teiHeader//titleStmt/title"/><xsl:text>#&#xa;</xsl:text>
+            <xsl:text>##Header Summary##&#xa;</xsl:text>
+            <xsl:text>##Content Summary##&#xa;</xsl:text>
+            
+            
  
+                <xsl:text>##Tag Usage Summary##&#xa;</xsl:text>
                 
-                <xsl:for-each-group select="//*" group-by="local-name()">
-                    <xsl:sort select="local-name()"/>
-
-                    <xsl:text>1.  __</xsl:text><xsl:value-of select="current-grouping-key()"/> <xsl:text>__ : </xsl:text><xsl:value-of select="count(current-group())"/>
-<xsl:text>
-    
-</xsl:text>    
-                  <xsl:variable name="eName" select="current-grouping-key()"/>
-                        <xsl:for-each-group select="//*[local-name()=$eName]/@*" group-by="name()">
-                          
-                                <xsl:text>  * @_</xsl:text><xsl:value-of select="current-grouping-key()"/><xsl:text>_: </xsl:text>
-                                <xsl:value-of select="count(current-group())"/><xsl:text> _</xsl:text><xsl:value-of select="distinct-values(current-group())"/><xsl:text>_</xsl:text>
-                            <xsl:text>
-    
-</xsl:text>    
-                        </xsl:for-each-group>
-                </xsl:for-each-group>
-            </n:ROOT>
+           
+            <xsl:call-template name="tagUsage">
+                <xsl:with-param name="set">
+                    <xsl:copy-of select="//teiHeader//*"/>
+                </xsl:with-param>
+                <xsl:with-param name="label">Header Tag Usage</xsl:with-param>
+            </xsl:call-template>
+            
+            <xsl:call-template name="tagUsage">
+                <xsl:with-param name="set">
+                    <xsl:copy-of select="//text//*"/>
+                </xsl:with-param>
+                <xsl:with-param name="label">Text Tag Usage</xsl:with-param>
+            </xsl:call-template>
+            
         </xsl:variable>
         
         <xsl:copy-of select="$all"/>
+    </xsl:template>
+    
+    <xsl:template name="tagUsage">
+        <xsl:param name="set"/>
+        <xsl:param name="label"/>
+        <xsl:text>###</xsl:text>
+        <xsl:value-of select="$label"/>
+        <xsl:text>###</xsl:text>
+        <xsl:text>&#xa;</xsl:text>
+
+        <xsl:for-each-group select="$set/*" group-by="local-name()">
+            <xsl:sort select="local-name()"/>
+            
+            <xsl:text>1.  __</xsl:text><xsl:value-of select="current-grouping-key()"/> <xsl:text>__: </xsl:text><xsl:value-of select="count(current-group())"/>
+            <xsl:text>&#xa;</xsl:text>    
+            <xsl:variable name="eName" select="current-grouping-key()"/>
+            <xsl:for-each-group select="$set//*[local-name()=$eName]/@*" group-by="name()">
+                
+                <xsl:text>  * @_</xsl:text><xsl:value-of select="current-grouping-key()"/><xsl:text>_: </xsl:text>
+                <xsl:value-of select="count(current-group())"/><xsl:text> _</xsl:text><xsl:value-of select="distinct-values(current-group())"/><xsl:text>_</xsl:text>
+                <xsl:text>&#xa;</xsl:text>    
+            </xsl:for-each-group>
+        </xsl:for-each-group>
+        
+
     </xsl:template>
     
     
