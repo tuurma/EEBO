@@ -52,7 +52,9 @@ Read TEI P5 document and construct markdown readme file with summary of the file
     <!-- turn on messages -->
     <xsl:param name="prefix"/>
     <xsl:param name="verbose">true</xsl:param>
+    <xsl:param name="headingSummary">false</xsl:param>
     
+
     <xsl:key name="Atts" match="@*" use="local-name(parent::*)"/>
     <xsl:key name="attVals" match="@*" use="concat(local-name(parent::*),local-name())"/>
     <xsl:key name="IDENTS" use="@ident" match="*[@ident]"/>
@@ -83,13 +85,15 @@ Read TEI P5 document and construct markdown readme file with summary of the file
             <xsl:for-each select="/TEI/teiHeader/fileDesc/titleStmt/*[not(author) and not(title)]">
                 <xsl:text></xsl:text><xsl:value-of select="."/><xsl:text>&#xa;</xsl:text>
             </xsl:for-each>
+            
+        <xsl:if test="$headingSummary='true'">
             <xsl:text>&#xa;##Header Summary##&#xa;</xsl:text>
             <xsl:for-each select="/TEI/teiHeader/*[not(fileDesc)]">
                 <xsl:apply-templates mode="header"/>
             </xsl:for-each>
+        </xsl:if>            
+            
             <xsl:text>&#xa;##Content Summary##&#xa;</xsl:text>
-<!--                <xsl:apply-templates select="/TEI/text" mode="toc"/>
--->
             <xsl:call-template name="toc">
                 <xsl:with-param name="set">
                     <xsl:copy-of select="/TEI/text/front/*"/>
@@ -134,9 +138,6 @@ Read TEI P5 document and construct markdown readme file with summary of the file
         <xsl:copy-of select="$all"/>
     </xsl:template>
 
-    <xsl:template match="note | title | projectDesc" mode="header">
-        <xsl:text>&#xa;*</xsl:text><xsl:value-of select="name()"/><xsl:text>*</xsl:text><xsl:apply-templates mode="header"/><xsl:text>&#xa;</xsl:text>   
-    </xsl:template>
 
     <xsl:template name="toc">
         <xsl:param name="label"/>
@@ -176,21 +177,18 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                         <xsl:when test="head">
                             <xsl:text>&#xa;</xsl:text>
                             <xsl:value-of select="$hdng"/><xsl:value-of select="normalize-space(head)"/><xsl:text>&#xa;</xsl:text>
-        
                         </xsl:when>
-                        
                         <xsl:otherwise>
                             <xsl:value-of select="substring(normalize-space(.), 1, 100)"/>
                         </xsl:otherwise>
-                        
                     </xsl:choose>
                     
-        <xsl:if test="$level&lt;4">
-            <xsl:call-template name="tocHead">
-                <xsl:with-param name="level" select="$level + 1"/>
-                <xsl:with-param name="set"><xsl:copy-of select="$set/div/div"/></xsl:with-param>
-            </xsl:call-template>
-        </xsl:if>
+                    <xsl:if test="$level&lt;4">
+                        <xsl:call-template name="tocHead">
+                            <xsl:with-param name="level" select="$level + 1"/>
+                            <xsl:with-param name="set"><xsl:copy-of select="$set/div/div"/></xsl:with-param>
+                        </xsl:call-template>
+                    </xsl:if>
         
                 </xsl:for-each>        
         
@@ -224,8 +222,8 @@ Read TEI P5 document and construct markdown readme file with summary of the file
         
     </xsl:template>
     
-    
-    
-    
+    <xsl:template match="note | title | projectDesc" mode="header">
+        <xsl:text>&#xa;*</xsl:text><xsl:value-of select="name()"/><xsl:text>*</xsl:text><xsl:apply-templates mode="header"/><xsl:text>&#xa;</xsl:text>   
+    </xsl:template>
     
 </xsl:stylesheet>
