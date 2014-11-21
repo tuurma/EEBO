@@ -70,13 +70,11 @@ Read TEI P5 document and construct markdown readme file with summary of the file
    
         
         <xsl:variable name="all">
-                <xsl:for-each select="/tei:*">
-                    <xsl:if test="$verbose='true'">
+           <xsl:if test="$verbose='true'">
                         <xsl:message>processing <xsl:value-of
                             select="base-uri(.)"/>, root element is <xsl:value-of select="name(.)"/>        </xsl:message>
-                
-                    </xsl:if>
-                </xsl:for-each>
+          </xsl:if>
+            
             <xsl:text>#</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/titleStmt/title"/><xsl:text>#&#xa;</xsl:text>
             <xsl:for-each select="/TEI/teiHeader/fileDesc/titleStmt/author">
                 <xsl:text>##</xsl:text><xsl:value-of select="."/><xsl:text>##&#xa;</xsl:text>
@@ -95,19 +93,18 @@ Read TEI P5 document and construct markdown readme file with summary of the file
             
             
  
-                <xsl:text>##Tag Usage Summary##&#xa;</xsl:text>
-                
+            <xsl:text>##Tag Usage Summary##&#xa;</xsl:text>
            
             <xsl:call-template name="tagUsage">
                 <xsl:with-param name="set">
-                    <xsl:copy-of select="//teiHeader//*"/>
+                    <xsl:copy-of select="/TEI/teiHeader//*"/>
                 </xsl:with-param>
                 <xsl:with-param name="label">Header Tag Usage</xsl:with-param>
             </xsl:call-template>
             
             <xsl:call-template name="tagUsage">
                 <xsl:with-param name="set">
-                    <xsl:copy-of select="//text//*"/>
+                    <xsl:copy-of select="/TEI/text//*"/>
                 </xsl:with-param>
                 <xsl:with-param name="label">Text Tag Usage</xsl:with-param>
             </xsl:call-template>
@@ -141,8 +138,10 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                 <xsl:value-of select="count(current-group())"/><xsl:text> _</xsl:text><xsl:value-of select="distinct-values(current-group())"/><xsl:text>_</xsl:text>
                 <xsl:text>&#xa;</xsl:text>    
             </xsl:for-each-group>
+            
         </xsl:for-each-group>
-
+        <xsl:text>&#xa;</xsl:text>
+        
     </xsl:template>
     
     
