@@ -60,6 +60,11 @@ Read TEI P5 document and construct markdown readme file with summary of the file
     <xsl:key name="All" match="*" use="'1'"/>
     <xsl:key name="E" match="/TEI/text//*" use="local-name()"/>
     <xsl:key name="Elements" match="*" use="'1'"/>
+    <xsl:key name="drama" match="/TEI/text//sp" use="1"/>
+    <xsl:key name="verseInDrama" match="/TEI/text//l[ancestor::sp]" use="1"/>
+    <xsl:key name="dramaCumVerse" match="/TEI/text//sp[descendant::l]" use="1"/>
+    <xsl:key name="dramaCumProse" match="/TEI/text//sp[descendant::ab or descendant::p]" use="1"/>
+    
 
 <xsl:variable name="all">
     <xsl:copy-of select="/"/>
@@ -126,10 +131,24 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                     <xsl:with-param name="label">Cast List</xsl:with-param>
                 </xsl:call-template>
                 
-                <xsl:if test="key('E', 'l')">&#xa;There are **verse** lines! &#xa;</xsl:if>
-                <xsl:if test="key('E', 'u')">&#xa;There are **speech** utterances! &#xa;</xsl:if>
-                <xsl:if test="key('E', 'sp')">&#xa;There are **drama** parts! &#xa;</xsl:if>
-                <xsl:if test="key('E', 'p')">&#xa;Oh, Mr. Jourdain there is **prose** in there! &#xa;</xsl:if>
+                <xsl:if test="count(key('E', 'l')) > count(key('verseInDrama', '1'))">&#xa;There are **verse** lines! &#xa;</xsl:if>
+                <xsl:if test="key('E', 'u')">&#xa;There are <xsl:value-of select="count(key('E', 'u'))"/> **speech** utterances! &#xa;</xsl:if>
+                <xsl:if test="key('E', 'sp')">&#xa;There are <xsl:value-of select="count(key('E', 'sp'))"/> **drama** parts!
+                   <xsl:choose>
+                       <xsl:when test="count(key('dramaCumVerse', '1')) = count(key('drama', '1'))">
+                           This is **verse drama**.
+                       </xsl:when>
+                       <xsl:when test="count(key('dramaCumProse', '1')) = count(key('drama', '1'))">
+                           This is **prose drama**.
+                       </xsl:when>
+                       <xsl:otherwise>
+                           This is mixed prose (<xsl:value-of select="count(key('dramaCumProse', '1'))"/>) and verse (<xsl:value-of select="count(key('dramaCumVerse', '1'))"/>) drama.
+                       </xsl:otherwise>
+                   </xsl:choose>
+                  
+                    &#xa;
+                </xsl:if>
+                <xsl:if test="key('E', 'p')">&#xa;Oh, Mr. Jourdain, there is **prose** in there! &#xa;</xsl:if>
                 
                 <xsl:text>&#xa;</xsl:text>
             </xsl:if>    

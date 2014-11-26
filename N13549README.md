@@ -11,7 +11,7 @@ Clap, Thomas, 1703-1767.
 
 To the extent possible under law, the Text Creation Partnership has waived all copyright and related or neighboring rights to this keyboarded and encoded edition of the work described above, according to the terms of the CC0 1.0 Public Domain Dedication (http://creativecommons.org/publicdomain/zero/1.0/). This waiver does not extend to any page images or other supplementary files associated with this work, which may be protected by copyright or other license restrictions. Please go to http://www.textcreationpartnership.org/ for more information.
 
-Oh, Mr. Jourdain there is **prose** in there! 
+Oh, Mr. Jourdain, there is **prose** in there! 
 
 
 ##Content Summary##

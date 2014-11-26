@@ -17,7 +17,7 @@ This keyboarded and encoded edition of the work described above is co-owned by t
 1. Ola
 1. Tola
 
-Oh, Mr. Jourdain there is **prose** in there! 
+Oh, Mr. Jourdain, there is **prose** in there! 
 
 
 ##Content Summary##
