@@ -8,11 +8,17 @@ Whitehead, Anne, 1624-1686.
 ##GEneral Summary##
 
 **Availability**
+
 This keyboarded and encoded edition of the work described above is co-owned by the institutions providing financial support to the Early English Books Online Text Creation Partnership. Searching, reading, printing, or downloading EEBO-TCP texts is reserved for the authorized users of these project partner institutions. Permission must be granted for subsequent distribution, in print or electronically, of this text, in whole or in part. Please contact project staff at eebotcp-info@umich.edu for further information or permissions.
+
 **People** (3)
+       
 1. Ala
 1. Ola
 1. Tola
+
+Oh, Mr. Jourdain there is **prose** in there! 
+
 
 ##Content Summary##
 
