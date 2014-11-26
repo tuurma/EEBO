@@ -77,6 +77,13 @@
                <term>Society of Friends --  Apologetic works.</term>
             </keywords>
          </textClass>
+         <particDesc>
+            <listPerson>
+               <person xml:id="P1"><persName>Ala</persName></person>
+               <person xml:id="P1"><persName>Ola</persName></person>
+               <person xml:id="P1"><persName>Tola</persName></person>
+            </listPerson>
+         </particDesc>
       </profileDesc>
       <revisionDesc>
          <change>

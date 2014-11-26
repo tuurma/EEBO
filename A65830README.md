@@ -5,6 +5,15 @@
 An epistle for true love, unity, and order in the Church of Christ against the spirit of discord, disorder and confusion &c. : recommended to friends in truth chiefly for the sake of the weak and unstable minded for information and encouragement in our Christian unity and society, held in the spirit of Christ both in faith and practice / by two servants of the Church according to our measures, Anne Whitehead, Mary Elson.
 Whitehead, Anne, 1624-1686.
 
+##GEneral Summary##
+
+**Availability**
+This keyboarded and encoded edition of the work described above is co-owned by the institutions providing financial support to the Early English Books Online Text Creation Partnership. Searching, reading, printing, or downloading EEBO-TCP texts is reserved for the authorized users of these project partner institutions. Permission must be granted for subsequent distribution, in print or electronically, of this text, in whole or in part. Please contact project staff at eebotcp-info@umich.edu for further information or permissions.
+**People** (3)
+1. Ala
+1. Ola
+1. Tola
+
 ##Content Summary##
 
 #####Front#####
@@ -56,6 +65,8 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt. Againſt the
 1.  __language__: 1
   * @_ident_: 1 | _eng (1)_
 
+1.  __listPerson__: 1
+
 1.  __listPrefixDef__: 1
 
 1.  __note__: 5
@@ -63,6 +74,13 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt. Againſt the
 1.  __notesStmt__: 2
 
 1.  __p__: 5
+
+1.  __particDesc__: 1
+
+1.  __persName__: 3
+
+1.  __person__: 3
+  * @_xml:id_: 3 | _P1 (0)_
 
 1.  __prefixDef__: 2
   * @_ident_: 2 | _tcp (1), char (1)_

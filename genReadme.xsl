@@ -52,6 +52,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
     <!-- turn on messages -->
     <xsl:param name="prefix"/>
     <xsl:param name="verbose">true</xsl:param>
+    <xsl:param name="generalSummary">true</xsl:param>
     <xsl:param name="headingSummary">false</xsl:param>
     
 
@@ -88,6 +89,38 @@ Read TEI P5 document and construct markdown readme file with summary of the file
             <xsl:for-each select="/TEI/teiHeader/fileDesc/titleStmt/*[not(author) and not(title)]">
                 <xsl:text></xsl:text><xsl:value-of select="."/><xsl:text>&#xa;</xsl:text>
             </xsl:for-each>
+            
+            <xsl:if test="$generalSummary='true'">
+                <xsl:text>&#xa;##GEneral Summary##&#xa;</xsl:text>
+                <xsl:if test="/TEI/teiHeader/fileDesc/publicationStmt/availability"><xsl:text>&#xa;**Availability**</xsl:text></xsl:if>
+                <xsl:for-each select="/TEI/teiHeader/fileDesc/publicationStmt/availability"><xsl:text>&#xa;</xsl:text><xsl:value-of select="normalize-space(.)"/></xsl:for-each>
+                
+                <xsl:call-template name="entityList">
+                    <xsl:with-param name="set">
+                        <xsl:copy-of select="/TEI/teiHeader//listPerson"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="elementName">person</xsl:with-param>
+                    <xsl:with-param name="label">People</xsl:with-param>
+                </xsl:call-template>
+                
+                <xsl:call-template name="entityList">
+                    <xsl:with-param name="set">
+                        <xsl:copy-of select="/TEI/teiHeader//listPlace"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="elementName">place</xsl:with-param>
+                    <xsl:with-param name="label">Places</xsl:with-param>
+                </xsl:call-template>
+                
+                <xsl:call-template name="entityList">
+                    <xsl:with-param name="set">
+                        <xsl:copy-of select="/TEI/teiHeader//listWit"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="elementName">witness</xsl:with-param>
+                    <xsl:with-param name="label">Witnesses</xsl:with-param>
+                </xsl:call-template>
+                
+                <xsl:text>&#xa;</xsl:text>
+            </xsl:if>    
             
         <xsl:if test="$headingSummary='true'">
             <xsl:text>&#xa;##Header Summary##&#xa;</xsl:text>
@@ -141,6 +174,16 @@ Read TEI P5 document and construct markdown readme file with summary of the file
         <xsl:copy-of select="$all"/>
     </xsl:template>
 
+   <xsl:template name="entityList">
+       <xsl:param name="set"/>
+       <xsl:param name="elementName"/>
+       <xsl:param name="label"/>
+       <xsl:if test="$set/node()"><xsl:text>&#xa;**</xsl:text><xsl:value-of select="$label"></xsl:value-of><xsl:text>**</xsl:text><xsl:text> (</xsl:text><xsl:value-of select="count($set//*[name()=$elementName])"/>)</xsl:if>
+       
+       <xsl:for-each select="$set//*[name()=$elementName]"><xsl:text>&#xa;1. </xsl:text><xsl:value-of select="normalize-space(.)"/></xsl:for-each>
+       
+       
+   </xsl:template>
 
     <xsl:template name="toc">
         <xsl:param name="label"/>
