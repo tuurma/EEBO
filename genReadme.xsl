@@ -46,6 +46,7 @@ $Id$
 Read TEI P5 document and construct markdown readme file with summary of the file textual content and tag usage
 -->
     <xsl:output method="text"/>
+    <xsl:strip-space elements="*"/>
     
     <!-- turn on debug messages -->
     <xsl:param name="debug">true</xsl:param>
@@ -75,7 +76,6 @@ Read TEI P5 document and construct markdown readme file with summary of the file
         <xsl:if test="$debug='true'">
             <xsl:message>Process </xsl:message>
         </xsl:if>
-   
         
         <xsl:variable name="all">
            <xsl:if test="$verbose='true'">
@@ -83,7 +83,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                             select="base-uri(.)"/>, root element is <xsl:value-of select="name(.)"/>        </xsl:message>
           </xsl:if>
             
-            <xsl:text>&#xa;#</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/titleStmt/title"/><xsl:text>#&#xa;</xsl:text>
+            <xsl:text>#</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/titleStmt/title"/><xsl:text>#&#xa;</xsl:text>
             <xsl:for-each select="/TEI/teiHeader/fileDesc/titleStmt/author">
                 <xsl:text>&#xa;##</xsl:text><xsl:value-of select="."/><xsl:text>##&#xa;</xsl:text>
             </xsl:for-each>
@@ -94,9 +94,13 @@ Read TEI P5 document and construct markdown readme file with summary of the file
             
             <xsl:if test="$generalSummary='true'">
                 <xsl:text>&#xa;##GEneral Summary##&#xa;</xsl:text>
-                <xsl:if test="/TEI/teiHeader/fileDesc/publicationStmt/availability"><xsl:text>&#xa;**Availability**&#xa;</xsl:text></xsl:if>
-                <xsl:for-each select="/TEI/teiHeader/fileDesc/publicationStmt/availability"><xsl:text>&#xa;</xsl:text><xsl:value-of select="normalize-space(.)"/>&#xa;</xsl:for-each>
                 
+                <xsl:if test="/TEI/teiHeader/fileDesc/publicationStmt/availability"><xsl:text>&#xa;**Availability**&#xa;</xsl:text></xsl:if>
+                <xsl:for-each select="/TEI/teiHeader/fileDesc/publicationStmt/availability"><xsl:text>&#xa;</xsl:text><xsl:value-of select="."/>&#xa;</xsl:for-each>
+                <xsl:text>&#xa;</xsl:text>
+
+                <xsl:if test="/TEI/teiHeader/revisionDesc/change"><xsl:text>&#xa;**Major revisions**&#xa;</xsl:text></xsl:if>
+                <xsl:for-each select="/TEI/teiHeader/revisionDesc/change"><xsl:text>&#xa;1. </xsl:text><xsl:apply-templates mode="header" select="."/></xsl:for-each>
                 <xsl:text>&#xa;</xsl:text>
                 
                 <xsl:call-template name="entityList">
@@ -210,7 +214,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
        <xsl:param name="elementName"/>
        <xsl:param name="label"/>
        <xsl:if test="$set/node()"><xsl:text>&#xa;**</xsl:text><xsl:value-of select="$label"></xsl:value-of><xsl:text>**</xsl:text><xsl:text> (</xsl:text><xsl:value-of select="count($set//*[name()=$elementName])"/>)
-       <xsl:for-each select="$set//*[name()=$elementName]"><xsl:text>&#xa;1. </xsl:text><xsl:value-of select="normalize-space(.)"/></xsl:for-each>
+       <xsl:for-each select="$set//*[name()=$elementName]"><xsl:text>&#xa;1. </xsl:text><xsl:value-of select="."/></xsl:for-each>
        <xsl:text>&#xa;</xsl:text>
        </xsl:if>
        
@@ -219,8 +223,8 @@ Read TEI P5 document and construct markdown readme file with summary of the file
     <xsl:template name="toc">
         <xsl:param name="label"/>
         <xsl:param name="set"/>
-        
-        <xsl:text>&#xa;#####</xsl:text><xsl:value-of select="$label"></xsl:value-of><xsl:text>#####&#xa;</xsl:text>
+        <xsl:if test="$set/node()">
+            <xsl:text>&#xa;#####</xsl:text><xsl:value-of select="$label"></xsl:value-of><xsl:text>#####&#xa;</xsl:text>
         <xsl:choose>
         <xsl:when test="$set/div">
             <xsl:call-template name="tocHead">
@@ -232,6 +236,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                 <xsl:value-of select="substring(string(.), 1, 100)"/>
         </xsl:otherwise>
         </xsl:choose>
+        </xsl:if>  
     </xsl:template>
 
 
@@ -253,10 +258,10 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                     <xsl:choose>
                         <xsl:when test="head">
                             <xsl:text>&#xa;</xsl:text>
-                            <xsl:value-of select="$hdng"/><xsl:value-of select="normalize-space(head)"/><xsl:text>&#xa;</xsl:text>
+                            <xsl:value-of select="$hdng"/><xsl:value-of select="head[1]"/><xsl:text>&#xa;</xsl:text>
                         </xsl:when>
                         <xsl:otherwise>
-                            <xsl:value-of select="substring(normalize-space(.), 1, 100)"/>
+                            <xsl:value-of select="substring(., 1, 100)"/>
                         </xsl:otherwise>
                     </xsl:choose>
                     
@@ -301,8 +306,21 @@ Read TEI P5 document and construct markdown readme file with summary of the file
         
     </xsl:template>
     
-    <xsl:template match="note | title | projectDesc" mode="header">
-        <xsl:text>&#xa;*</xsl:text><xsl:value-of select="name()"/><xsl:text>*</xsl:text><xsl:apply-templates mode="header"/><xsl:text>&#xa;</xsl:text>   
-    </xsl:template>
+    <xsl:template match="note | title | projectDesc" mode="header"><xsl:text>&#xa;*</xsl:text><xsl:value-of select="name()"/><xsl:text>*</xsl:text><xsl:apply-templates mode="header"/><xsl:text>&#xa;</xsl:text></xsl:template>
+
+    <xsl:template match="change" mode="header" xml:space="default">
+     
+          <xsl:text>__</xsl:text><xsl:value-of select="date"/><xsl:text>__ </xsl:text>
+          <xsl:text>__</xsl:text><xsl:value-of select="label"/><xsl:text>__</xsl:text>
+          <xsl:text> *</xsl:text><xsl:for-each select="child::text()"><xsl:value-of select="."/>*</xsl:for-each>
+      
+        
+     
+        </xsl:template>
     
+
+
+
+    
+
 </xsl:stylesheet>

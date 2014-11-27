@@ -1,4 +1,3 @@
-
 #An epistle for true love, unity, and order in the Church of Christ against the spirit of discord, disorder and confusion &c. : recommended to friends in truth chiefly for the sake of the weak and unstable minded for information and encouragement in our Christian unity and society, held in the spirit of Christ both in faith and practice / by two servants of the Church according to our measures, Anne Whitehead, Mary Elson.#
 
 ##Whitehead, Anne, 1624-1686.##
@@ -9,7 +8,15 @@ Whitehead, Anne, 1624-1686.
 
 **Availability**
 
-This keyboarded and encoded edition of the work described above is co-owned by the institutions providing financial support to the Early English Books Online Text Creation Partnership. Searching, reading, printing, or downloading EEBO-TCP texts is reserved for the authorized users of these project partner institutions. Permission must be granted for subsequent distribution, in print or electronically, of this text, in whole or in part. Please contact project staff at eebotcp-info@umich.edu for further information or permissions.
+This keyboarded and encoded edition of the work described above is co-owned by the institutions providing financial support to the Early English Books Online Text Creation Partnership. Searching, reading, printing, or downloading EEBO-TCP texts is reserved for the authorized users of these project partner institutions. Permission must be granted for subsequent distribution, in print or electronically, of this text, in whole or in part.  Please contact project staff at eebotcp-info@umich.edu for further information or permissions.
+
+**Major revisions**
+
+1. __2010-08__ __TCP__ *Assigned for keying and markup*
+1. __2010-09__ __SPi Global__ *Keyed and coded from ProQuest page images*
+1. __2010-11__ __Pip Willcox__ *Sampled and proofread*
+1. __2010-11__ __Pip Willcox__ *Text and markup reviewed and edited*
+1. __2011-06__ __pfs__ *Batch review (QC) and XML conversion*
 
 **People** (3)
        
@@ -23,7 +30,7 @@ Oh, Mr. Jourdain, there is **prose** in there!
 ##Content Summary##
 
 #####Front#####
-AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt. Againſt the Spirit of Diſcord, Di
+AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt.Againſt the Spirit of Diſcord, Diſ
 #####Body#####
 
 1. An EPISTLE for true Love, Ʋnity and Order, &c.
