@@ -18,8 +18,9 @@ To the extent possible under law, the Text Creation Partnership has waived all c
 1. __2009-09__ __Olivia Bottum__ *Text and markup reviewed and edited*
 1. __2010-04__ __pfs.__ *Batch review (QC) and XML conversion*
 
-Oh, Mr. Jourdain, there is **prose** in there! 
+**Types of content**
 
+  * Oh, Mr. Jourdain, there is **prose** in there!
 
 ##Content Summary##
 
