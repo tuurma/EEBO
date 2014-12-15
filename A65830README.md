@@ -7,8 +7,13 @@ Whitehead, Anne, 1624-1686.
 ##General Summary##
 
 **Links**
+
+[TCP catalogue](https://http://www.ota.ox.ac.uk/tcp.html)
+
 [HTML](https://http://www.ota.ox.ac.uk/text/A65830.html)
+
 [ePub](http://www.ota.ox.ac.uk/text/A65830.epub)
+
 [Page images (Historical Texts)](https://data.historicaltexts.jisc.ac.uk/view?pubId=eebo-13541589e&pageId=eebo-13541589e-100086-1)
 
 **Availability**
