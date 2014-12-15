@@ -57,9 +57,7 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt.Againſt the 
 ###Header Tag Usage###
 
 |No|elementName|occ|attributes|
-
 |---|---|---|---|
-
 |1.|__author__|3||
 |2.|__availability__|1||
 |3.|__biblFull__|1||
