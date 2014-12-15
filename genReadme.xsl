@@ -312,13 +312,12 @@ Read TEI P5 document and construct markdown readme file with summary of the file
             <xsl:variable name="eName" select="current-grouping-key()"/>
             <xsl:for-each-group select="current-group()/@*" group-by="name()">
                 
-                <xsl:text>  * @_</xsl:text><xsl:value-of select="current-grouping-key()"/><xsl:text>_ (</xsl:text>
+                <xsl:text> @_</xsl:text><xsl:value-of select="current-grouping-key()"/><xsl:text>_ (</xsl:text>
                 <xsl:value-of select="count(current-group())"/><xsl:text>) --- _</xsl:text>
                 <xsl:for-each select="distinct-values(current-group())"><xsl:variable name="current"><xsl:value-of select="."/></xsl:variable><xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(key('attVals', concat($eName, current-grouping-key(), $current), $all))"/><xsl:text>)</xsl:text><xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if></xsl:for-each>
                 <xsl:text>_</xsl:text>
             </xsl:for-each-group>
-            
-            <xsl:text>|&#xa;</xsl:text>
+            <xsl:text>|</xsl:text>
          
            
         </xsl:for-each-group>
