@@ -314,7 +314,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                 <xsl:text> @__</xsl:text><xsl:value-of select="current-grouping-key()"/><xsl:text>__ (</xsl:text>
                 <xsl:value-of select="count(current-group())"/><xsl:text>) : </xsl:text>
                 <xsl:for-each select="distinct-values(current-group())"><xsl:variable name="current"><xsl:value-of select="."/></xsl:variable><xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(key('attVals', concat($eName, current-grouping-key(), $current), $all))"/><xsl:text>)</xsl:text><xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if></xsl:for-each>
-                <xsl:text> --- </xsl:text>
+                <xsl:if test="position()!=last()"><xsl:text> --- </xsl:text></xsl:if>
             </xsl:for-each-group>
             <xsl:text>|</xsl:text>
          
