@@ -8,7 +8,7 @@ Clap, Thomas, 1703-1767.
 
 **Links**
 
-[TCP catalogue](https://http://www.ota.ox.ac.uk/tcp.html)
+[TCP catalogue](http://www.ota.ox.ac.uk/tcp.html)
 
 [HTML](https://http://www.ota.ox.ac.uk/text/N13549.html)
 
