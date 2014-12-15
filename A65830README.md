@@ -56,24 +56,22 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt.Againſt the 
 
 ###Header Tag Usage###
 
-|No|elementName|occ|attributes|
-
+|No|element name|occ|attributes|
 |---|---|---|---|
-
 |1.|__author__|3||
 |2.|__availability__|1||
 |3.|__biblFull__|1||
 |4.|__change__|5||
-|5.|__date__|7| @_when_ (1) --- _2011-12 (1)_|
-|6.|__editorialDecl__|1| @_n_ (1) --- _4 (1)_|
+|5.|__date__|7| @__when__ (1) : 2011-12 (1) --- |
+|6.|__editorialDecl__|1| @__n__ (1) : 4 (1) --- |
 |7.|__encodingDesc__|1||
 |8.|__extent__|2||
 |9.|__fileDesc__|1||
-|10.|__idno__|6| @_type_ (6) --- _DLPS (1), STC (2), EEBO-CITATION (1), OCLC (1), VID (1)_|
-|11.|__keywords__|1| @_scheme_ (1) --- _http://authorities.loc.gov/ (1)_|
+|10.|__idno__|6| @__type__ (6) : DLPS (1), STC (2), EEBO-CITATION (1), OCLC (1), VID (1) --- |
+|11.|__keywords__|1| @__scheme__ (1) : http://authorities.loc.gov/ (1) --- |
 |12.|__label__|5||
 |13.|__langUsage__|1||
-|14.|__language__|1| @_ident_ (1) --- _eng (1)_|
+|14.|__language__|1| @__ident__ (1) : eng (1) --- |
 |15.|__listPerson__|1||
 |16.|__listPrefixDef__|1||
 |17.|__note__|5||
@@ -81,8 +79,8 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt.Againſt the 
 |19.|__p__|5||
 |20.|__particDesc__|1||
 |21.|__persName__|3||
-|22.|__person__|3| @_xml:id_ (3) --- _P1 (0)_|
-|23.|__prefixDef__|2| @_ident_ (2) --- _tcp (1), char (1)_ @_matchPattern_ (2) --- _([0-9\-]+):([0-9IVX]+) (1), (.+) (1)_ @_replacementPattern_ (2) --- _http://eebo.chadwyck.com/downloadtiff?vid=$1&page=$2 (1), https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1 (1)_|
+|22.|__person__|3| @__xml:id__ (3) : P1 (0) --- |
+|23.|__prefixDef__|2| @__ident__ (2) : tcp (1), char (1) ---  @__matchPattern__ (2) : ([0-9\-]+):([0-9IVX]+) (1), (.+) (1) ---  @__replacementPattern__ (2) : http://eebo.chadwyck.com/downloadtiff?vid=$1&page=$2 (1), https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1 (1) --- |
 |24.|__profileDesc__|1||
 |25.|__projectDesc__|1||
 |26.|__pubPlace__|2||
@@ -99,27 +97,25 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt.Againſt the 
 
 ###Text Tag Usage###
 
-|No|elementName|occ|attributes|
-
+|No|element name|occ|attributes|
 |---|---|---|---|
-
 |1.|__back__|1||
 |2.|__bibl__|1||
 |3.|__body__|1||
 |4.|__closer__|2||
 |5.|__desc__|1||
-|6.|__div__|4| @_type_ (4) --- _title_page (1), letter (1), account (1), publishers_advertisement (1)_|
+|6.|__div__|4| @__type__ (4) : title_page (1), letter (1), account (1), publishers_advertisement (1) --- |
 |7.|__front__|1||
-|8.|__g__|5| @_ref_ (5) --- _char:V (5)_|
-|9.|__gap__|1| @_reason_ (1) --- _illegible (1)_ @_resp_ (1) --- _#OXF (1)_ @_extent_ (1) --- _2 letters (1)_|
+|8.|__g__|5| @__ref__ (5) : char:V (5) --- |
+|9.|__gap__|1| @__reason__ (1) : illegible (1) ---  @__resp__ (1) : #OXF (1) ---  @__extent__ (1) : 2 letters (1) --- |
 |10.|__head__|3||
 |11.|__hi__|123||
 |12.|__item__|46||
 |13.|__list__|1||
-|14.|__note__|4| @_place_ (4) --- _margin (4)_|
+|14.|__note__|4| @__place__ (4) : margin (4) --- |
 |15.|__opener__|1||
 |16.|__p__|16||
-|17.|__pb__|18| @_facs_ (18) --- _tcp:100086:1 (2), tcp:100086:2 (2), tcp:100086:3 (2), tcp:100086:4 (2), tcp:100086:5 (2), tcp:100086:6 (2), tcp:100086:7 (2), tcp:100086:8 (2), tcp:100086:9 (2)_ @_n_ (12) --- _3 (1), 4 (1), 5 (1), 6 (1), 7 (1), 8 (1), 9 (1), 10 (1), 11 (1), 12 (1), 13 (1), 14 (1)_|
+|17.|__pb__|18| @__facs__ (18) : tcp:100086:1 (2), tcp:100086:2 (2), tcp:100086:3 (2), tcp:100086:4 (2), tcp:100086:5 (2), tcp:100086:6 (2), tcp:100086:7 (2), tcp:100086:8 (2), tcp:100086:9 (2) ---  @__n__ (12) : 3 (1), 4 (1), 5 (1), 6 (1), 7 (1), 8 (1), 9 (1), 10 (1), 11 (1), 12 (1), 13 (1), 14 (1) --- |
 |18.|__q__|1||
 |19.|__salute__|1||
 |20.|__signed__|2||
