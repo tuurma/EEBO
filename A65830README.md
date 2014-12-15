@@ -77,7 +77,7 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt.Againſt the 
 |20.|__particDesc__|1||
 |21.|__persName__|3||
 |22.|__person__|3| @__xml:id__ (3) : P1 (0)|
-|23.|__prefixDef__|2| @__ident__ (2) : tcp (1), char (1) ---  @__matchPattern__ (2) : ([0-9\-]+):([0-9IVX]+) (1), (.+) (1) ---  @__replacementPattern__ (2) : http://eebo.chadwyck.com/downloadtiff?vid=$1&page=$2 (1), https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1 (1)|
+|23.|__prefixDef__|2| @__ident__ (2) : tcp (1), char (1)  •  @__matchPattern__ (2) : ([0-9\-]+):([0-9IVX]+) (1), (.+) (1)  •  @__replacementPattern__ (2) : http://eebo.chadwyck.com/downloadtiff?vid=$1&page=$2 (1), https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1 (1)|
 |24.|__profileDesc__|1||
 |25.|__projectDesc__|1||
 |26.|__pubPlace__|2||
@@ -104,7 +104,7 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt.Againſt the 
 |6.|__div__|4| @__type__ (4) : title_page (1), letter (1), account (1), publishers_advertisement (1)|
 |7.|__front__|1||
 |8.|__g__|5| @__ref__ (5) : char:V (5)|
-|9.|__gap__|1| @__reason__ (1) : illegible (1) ---  @__resp__ (1) : #OXF (1) ---  @__extent__ (1) : 2 letters (1)|
+|9.|__gap__|1| @__reason__ (1) : illegible (1)  •  @__resp__ (1) : #OXF (1)  •  @__extent__ (1) : 2 letters (1)|
 |10.|__head__|3||
 |11.|__hi__|123||
 |12.|__item__|46||
@@ -112,7 +112,7 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt.Againſt the 
 |14.|__note__|4| @__place__ (4) : margin (4)|
 |15.|__opener__|1||
 |16.|__p__|16||
-|17.|__pb__|18| @__facs__ (18) : tcp:100086:1 (2), tcp:100086:2 (2), tcp:100086:3 (2), tcp:100086:4 (2), tcp:100086:5 (2), tcp:100086:6 (2), tcp:100086:7 (2), tcp:100086:8 (2), tcp:100086:9 (2) ---  @__n__ (12) : 3 (1), 4 (1), 5 (1), 6 (1), 7 (1), 8 (1), 9 (1), 10 (1), 11 (1), 12 (1), 13 (1), 14 (1)|
+|17.|__pb__|18| @__facs__ (18) : tcp:100086:1 (2), tcp:100086:2 (2), tcp:100086:3 (2), tcp:100086:4 (2), tcp:100086:5 (2), tcp:100086:6 (2), tcp:100086:7 (2), tcp:100086:8 (2), tcp:100086:9 (2)  •  @__n__ (12) : 3 (1), 4 (1), 5 (1), 6 (1), 7 (1), 8 (1), 9 (1), 10 (1), 11 (1), 12 (1), 13 (1), 14 (1)|
 |18.|__q__|1||
 |19.|__salute__|1||
 |20.|__signed__|2||

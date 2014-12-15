@@ -61,7 +61,7 @@ PRESIDENT CLAP, ON TERRESTRIAL COMETS.CONJECTURES UPON THE NATURE AND MOTION OF 
 |16.|__note__|4||
 |17.|__notesStmt__|2||
 |18.|__p__|5||
-|19.|__prefixDef__|2| @__ident__ (2) : tcp (1), char (1) ---  @__matchPattern__ (2) : ([0-9\-]+):([0-9IVX]+) (1), (.+) (1) ---  @__replacementPattern__ (2) : http://eebo.chadwyck.com/downloadtiff?vid=$1&page=$2 (1), https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1 (1)|
+|19.|__prefixDef__|2| @__ident__ (2) : tcp (1), char (1)  •  @__matchPattern__ (2) : ([0-9\-]+):([0-9IVX]+) (1), (.+) (1)  •  @__replacementPattern__ (2) : http://eebo.chadwyck.com/downloadtiff?vid=$1&page=$2 (1), https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1 (1)|
 |20.|__profileDesc__|1||
 |21.|__projectDesc__|1||
 |22.|__pubPlace__|2||
@@ -86,14 +86,14 @@ PRESIDENT CLAP, ON TERRESTRIAL COMETS.CONJECTURES UPON THE NATURE AND MOTION OF 
 |4.|__div__|3| @__type__ (3) : half_title (1), title_page (1), text (1)|
 |5.|__figure__|1||
 |6.|__front__|1||
-|7.|__gap__|130| @__reason__ (130) : illegible (130) ---  @__resp__ (130) : #PDCC (130) ---  @__extent__ (130) : 1 word (8), 1 letter (110), 1 span (8), 2 letters (3), 3 letters (1)|
+|7.|__gap__|130| @__reason__ (130) : illegible (130)  •  @__resp__ (130) : #PDCC (130)  •  @__extent__ (130) : 1 word (8), 1 letter (110), 1 span (8), 2 letters (3), 3 letters (1)|
 |8.|__head__|1||
 |9.|__hi__|41||
 |10.|__item__|4||
 |11.|__list__|1||
-|12.|__note__|4| @__n__ (4) : * (3), † (1) ---  @__place__ (4) : bottom (4)|
+|12.|__note__|4| @__n__ (4) : * (3), † (1)  •  @__place__ (4) : bottom (4)|
 |13.|__p__|45| @__n__ (19) : 1 (4), 2 (4), 3 (4), 4 (2), 5 (2), 6 (2), 7 (1)|
-|14.|__pb__|12| @__facs__ (12) : tcp:017113_0000_0FA02F49C5F4EAE8 (1), tcp:017113_0001_0FA02F4A826C77D8 (1), tcp:017113_0002_0FA02F4B495079C8 (1), tcp:017113_0003_0FA02F4BF24EFF70 (1), tcp:017113_0004_0FA02F4D31625D50 (1), tcp:017113_0005_0FA02F4DA10DC2F0 (1), tcp:017113_0006_0FA02F4E4B1E86F0 (1), tcp:017113_0007_0FA02F4F01A4DE30 (1), tcp:017113_0008_0FA02F4FADE67530 (1), tcp:017113_0009_0FA02F50ED675E08 (1), tcp:017113_0010_0FA02F51894F3978 (1), tcp:017113_0011_0FA02F5232287FF8 (1) ---  @__n__ (8) : 6 (1), 7 (1), 8 (1), 9 (1), 10 (1), 11 (1), 12 (1), 13 (1)|
+|14.|__pb__|12| @__facs__ (12) : tcp:017113_0000_0FA02F49C5F4EAE8 (1), tcp:017113_0001_0FA02F4A826C77D8 (1), tcp:017113_0002_0FA02F4B495079C8 (1), tcp:017113_0003_0FA02F4BF24EFF70 (1), tcp:017113_0004_0FA02F4D31625D50 (1), tcp:017113_0005_0FA02F4DA10DC2F0 (1), tcp:017113_0006_0FA02F4E4B1E86F0 (1), tcp:017113_0007_0FA02F4F01A4DE30 (1), tcp:017113_0008_0FA02F4FADE67530 (1), tcp:017113_0009_0FA02F50ED675E08 (1), tcp:017113_0010_0FA02F51894F3978 (1), tcp:017113_0011_0FA02F5232287FF8 (1)  •  @__n__ (8) : 6 (1), 7 (1), 8 (1), 9 (1), 10 (1), 11 (1), 12 (1), 13 (1)|
 |15.|__q__|2||
 |16.|__row__|19||
 |17.|__table__|5||
