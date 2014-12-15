@@ -29,6 +29,16 @@ To the extent possible under law, the Text Creation Partnership has waived all c
 
   * Oh, Mr. Jourdain, there is **prose** in there!
 
+**Character listing**
+file:/home/ouit0180/EEBO/N13549.xml
+|Text|string|codepoint|
+|---|---|---|
+|Latin-1 Supplement|­ ×°|173 160 215 176|
+|Latin Extended-A|ſ|383|
+|General Punctuation|•…—′|8226 8230 8212 8242|
+|Geometric Shapes|◊|9674|
+|CJKSymbolsandPunctuation|〈〉|12296 12297|
+
 ##Content Summary##
 
 #####Front#####

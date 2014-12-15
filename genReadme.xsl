@@ -45,8 +45,13 @@ $Id$
     <!-- 
 Read TEI P5 document and construct markdown readme file with summary of the file textual content and tag usage
 -->
+    
+    <xsl:import href="diagnose.xsl"/>
+    
     <xsl:output method="text"/>
     <xsl:strip-space elements="*"/>
+    
+    
     
     <!-- turn on debug messages -->
     <xsl:param name="debug">true</xsl:param>
@@ -76,6 +81,14 @@ Read TEI P5 document and construct markdown readme file with summary of the file
         <xsl:if test="$debug='true'">
             <xsl:message>Process </xsl:message>
         </xsl:if>
+        
+        <xsl:variable name="ranges">
+            <ranges>
+                <xsl:call-template name="diagnose">
+                    <xsl:with-param name="content" select="$all/string()"/>
+                </xsl:call-template>
+            </ranges>
+        </xsl:variable>
         
         <xsl:variable name="all">
            <xsl:if test="$verbose='true'">
@@ -161,9 +174,34 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                    </xsl:choose>
                 </xsl:if>
                 <xsl:if test="key('E', 'p')">&#xa;  * Oh, Mr. Jourdain, there is **prose** in there!</xsl:if>
+
+                    <xsl:if test="matches(/, '\p{IsAlchemicalSymbols}')">
+                        <xsl:message>Text has alchemical characters</xsl:message>
+                    </xsl:if>
                 
                 <xsl:text>&#xa;</xsl:text>
             </xsl:if>    
+            
+ 
+          
+            <xsl:text>&#xa;**Character listing**&#xa;</xsl:text>
+                    <xsl:value-of select="base-uri(/)"/>
+                    <xsl:text>&#xa;|Text|string|codepoint|</xsl:text>
+            <xsl:text>&#xa;|---|---|---|</xsl:text>
+            <xsl:for-each-group select="$ranges//range" group-by="@n">
+                            <xsl:variable name="text"><xsl:value-of
+                                select="current-group()//text()" separator=""/></xsl:variable>
+
+                            <xsl:text>&#xa;|</xsl:text>
+                            <xsl:value-of select="@n"/>
+                            <xsl:text>|</xsl:text>
+                            <xsl:value-of select="codepoints-to-string(distinct-values(string-to-codepoints($text)))"/>
+                            <xsl:text>|</xsl:text>
+                            <xsl:value-of select="distinct-values(string-to-codepoints($text))"/>
+                            <xsl:text>|</xsl:text>
+                        </xsl:for-each-group>
+
+            <xsl:text>&#xa;</xsl:text>
             
         <xsl:if test="$headingSummary='true'">
             <xsl:text>&#xa;##Header Summary##&#xa;</xsl:text>

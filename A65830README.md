@@ -35,6 +35,15 @@ This keyboarded and encoded edition of the work described above is co-owned by t
 
   * Oh, Mr. Jourdain, there is **prose** in there!
 
+**Character listing**
+file:/home/ouit0180/EEBO/A65830.xml
+|Text|string|codepoint|
+|---|---|---|
+|Latin-1 Supplement|­|173|
+|Latin Extended-A|ſ|383|
+|Latin Extended-B|Ʋ|434|
+|General Punctuation|—•|8212 8226|
+
 ##Content Summary##
 
 #####Front#####
