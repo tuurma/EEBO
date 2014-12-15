@@ -186,7 +186,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
           
             <xsl:text>&#xa;**Character listing**&#xa;</xsl:text>
                     <xsl:value-of select="base-uri(/)"/>
-                    <xsl:text>&#xa;|Text|string|codepoint|</xsl:text>
+                    <xsl:text>&#xa;&#xa;|Text|string(s)|codepoint(s)|</xsl:text>
             <xsl:text>&#xa;|---|---|---|</xsl:text>
             <xsl:for-each-group select="$ranges//range" group-by="@n">
                             <xsl:variable name="text"><xsl:value-of

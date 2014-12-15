@@ -37,7 +37,8 @@ This keyboarded and encoded edition of the work described above is co-owned by t
 
 **Character listing**
 file:/home/ouit0180/EEBO/A65830.xml
-|Text|string|codepoint|
+
+|Text|string(s)|codepoint(s)|
 |---|---|---|
 |Latin-1 Supplement|­|173|
 |Latin Extended-A|ſ|383|

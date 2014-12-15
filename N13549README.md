@@ -31,7 +31,8 @@ To the extent possible under law, the Text Creation Partnership has waived all c
 
 **Character listing**
 file:/home/ouit0180/EEBO/N13549.xml
-|Text|string|codepoint|
+
+|Text|string(s)|codepoint(s)|
 |---|---|---|
 |Latin-1 Supplement|­ ×°|173 160 215 176|
 |Latin Extended-A|ſ|383|
