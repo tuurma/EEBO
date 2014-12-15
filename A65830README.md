@@ -56,136 +56,127 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt.Againſt the 
 
 ###Header Tag Usage###
 
-1.  __author__: 3
+|No|elementName|occ|attributes|
 
-1.  __availability__: 1
+|---|---|---|---|
 
-1.  __biblFull__: 1
+|1.|__author__|3||
 
-1.  __change__: 5
+|2.|__availability__|1||
 
-1.  __date__: 7
-  * @_when_: 1 | _2011-12 (1)_
+|3.|__biblFull__|1||
 
-1.  __editorialDecl__: 1
-  * @_n_: 1 | _4 (1)_
+|4.|__change__|5||
 
-1.  __encodingDesc__: 1
+|5.|__date__|7|  * @_when_ (1) --- _2011-12 (1)_|
 
-1.  __extent__: 2
+|6.|__editorialDecl__|1|  * @_n_ (1) --- _4 (1)_|
 
-1.  __fileDesc__: 1
+|7.|__encodingDesc__|1||
 
-1.  __idno__: 6
-  * @_type_: 6 | _DLPS (1), STC (2), EEBO-CITATION (1), OCLC (1), VID (1)_
+|8.|__extent__|2||
 
-1.  __keywords__: 1
-  * @_scheme_: 1 | _http://authorities.loc.gov/ (1)_
+|9.|__fileDesc__|1||
 
-1.  __label__: 5
+|10.|__idno__|6|  * @_type_ (6) --- _DLPS (1), STC (2), EEBO-CITATION (1), OCLC (1), VID (1)_|
 
-1.  __langUsage__: 1
+|11.|__keywords__|1|  * @_scheme_ (1) --- _http://authorities.loc.gov/ (1)_|
 
-1.  __language__: 1
-  * @_ident_: 1 | _eng (1)_
+|12.|__label__|5||
 
-1.  __listPerson__: 1
+|13.|__langUsage__|1||
 
-1.  __listPrefixDef__: 1
+|14.|__language__|1|  * @_ident_ (1) --- _eng (1)_|
 
-1.  __note__: 5
+|15.|__listPerson__|1||
 
-1.  __notesStmt__: 2
+|16.|__listPrefixDef__|1||
 
-1.  __p__: 5
+|17.|__note__|5||
 
-1.  __particDesc__: 1
+|18.|__notesStmt__|2||
 
-1.  __persName__: 3
+|19.|__p__|5||
 
-1.  __person__: 3
-  * @_xml:id_: 3 | _P1 (0)_
+|20.|__particDesc__|1||
 
-1.  __prefixDef__: 2
-  * @_ident_: 2 | _tcp (1), char (1)_
-  * @_matchPattern_: 2 | _([0-9\-]+):([0-9IVX]+) (1), (.+) (1)_
-  * @_replacementPattern_: 2 | _http://eebo.chadwyck.com/downloadtiff?vid=$1&page=$2 (1), https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1 (1)_
+|21.|__persName__|3||
 
-1.  __profileDesc__: 1
+|22.|__person__|3|  * @_xml:id_ (3) --- _P1 (0)_|
 
-1.  __projectDesc__: 1
+|23.|__prefixDef__|2|  * @_ident_ (2) --- _tcp (1), char (1)_  * @_matchPattern_ (2) --- _([0-9\-]+):([0-9IVX]+) (1), (.+) (1)_  * @_replacementPattern_ (2) --- _http://eebo.chadwyck.com/downloadtiff?vid=$1&page=$2 (1), https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1 (1)_|
 
-1.  __pubPlace__: 2
+|24.|__profileDesc__|1||
 
-1.  __publicationStmt__: 2
+|25.|__projectDesc__|1||
 
-1.  __publisher__: 2
+|26.|__pubPlace__|2||
 
-1.  __revisionDesc__: 1
+|27.|__publicationStmt__|2||
 
-1.  __seriesStmt__: 1
+|28.|__publisher__|2||
 
-1.  __sourceDesc__: 1
+|29.|__revisionDesc__|1||
 
-1.  __term__: 1
+|30.|__seriesStmt__|1||
 
-1.  __textClass__: 1
+|31.|__sourceDesc__|1||
 
-1.  __title__: 3
+|32.|__term__|1||
 
-1.  __titleStmt__: 2
+|33.|__textClass__|1||
+
+|34.|__title__|3||
+
+|35.|__titleStmt__|2||
 
 
 
 ###Text Tag Usage###
 
-1.  __back__: 1
+|No|elementName|occ|attributes|
 
-1.  __bibl__: 1
+|---|---|---|---|
 
-1.  __body__: 1
+|1.|__back__|1||
 
-1.  __closer__: 2
+|2.|__bibl__|1||
 
-1.  __desc__: 1
+|3.|__body__|1||
 
-1.  __div__: 4
-  * @_type_: 4 | _title_page (1), letter (1), account (1), publishers_advertisement (1)_
+|4.|__closer__|2||
 
-1.  __front__: 1
+|5.|__desc__|1||
 
-1.  __g__: 5
-  * @_ref_: 5 | _char:V (5)_
+|6.|__div__|4|  * @_type_ (4) --- _title_page (1), letter (1), account (1), publishers_advertisement (1)_|
 
-1.  __gap__: 1
-  * @_reason_: 1 | _illegible (1)_
-  * @_resp_: 1 | _#OXF (1)_
-  * @_extent_: 1 | _2 letters (1)_
+|7.|__front__|1||
 
-1.  __head__: 3
+|8.|__g__|5|  * @_ref_ (5) --- _char:V (5)_|
 
-1.  __hi__: 123
+|9.|__gap__|1|  * @_reason_ (1) --- _illegible (1)_  * @_resp_ (1) --- _#OXF (1)_  * @_extent_ (1) --- _2 letters (1)_|
 
-1.  __item__: 46
+|10.|__head__|3||
 
-1.  __list__: 1
+|11.|__hi__|123||
 
-1.  __note__: 4
-  * @_place_: 4 | _margin (4)_
+|12.|__item__|46||
 
-1.  __opener__: 1
+|13.|__list__|1||
 
-1.  __p__: 16
+|14.|__note__|4|  * @_place_ (4) --- _margin (4)_|
 
-1.  __pb__: 18
-  * @_facs_: 18 | _tcp:100086:1 (2), tcp:100086:2 (2), tcp:100086:3 (2), tcp:100086:4 (2), tcp:100086:5 (2), tcp:100086:6 (2), tcp:100086:7 (2), tcp:100086:8 (2), tcp:100086:9 (2)_
-  * @_n_: 12 | _3 (1), 4 (1), 5 (1), 6 (1), 7 (1), 8 (1), 9 (1), 10 (1), 11 (1), 12 (1), 13 (1), 14 (1)_
+|15.|__opener__|1||
 
-1.  __q__: 1
+|16.|__p__|16||
 
-1.  __salute__: 1
+|17.|__pb__|18|  * @_facs_ (18) --- _tcp:100086:1 (2), tcp:100086:2 (2), tcp:100086:3 (2), tcp:100086:4 (2), tcp:100086:5 (2), tcp:100086:6 (2), tcp:100086:7 (2), tcp:100086:8 (2), tcp:100086:9 (2)_  * @_n_ (12) --- _3 (1), 4 (1), 5 (1), 6 (1), 7 (1), 8 (1), 9 (1), 10 (1), 11 (1), 12 (1), 13 (1), 14 (1)_|
 
-1.  __signed__: 2
+|18.|__q__|1||
 
-1.  __trailer__: 1
+|19.|__salute__|1||
+
+|20.|__signed__|2||
+
+|21.|__trailer__|1||
 
