@@ -4,7 +4,12 @@
 Conjectures upon the nature and motion of meteors, which are above the atmosphere. By Thomas Clap, A.M. late president of Yale-College.
 Clap, Thomas, 1703-1767.
 
-##GEneral Summary##
+##General Summary##
+
+**Links**
+[HTML](https://http://www.ota.ox.ac.uk/text/N13549.html)
+[ePub](http://www.ota.ox.ac.uk/text/N13549.epub)
+[Page images (Historical Texts)](https://data.historicaltexts.jisc.ac.uk/view?pubId=eebo-e&pageId=eebo-e--1)
 
 **Availability**
 
