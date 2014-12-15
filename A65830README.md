@@ -10,7 +10,7 @@ Whitehead, Anne, 1624-1686.
 
 [TCP catalogue](http://www.ota.ox.ac.uk/tcp.html)
 
-[HTML](https://www.ota.ox.ac.uk/text/A65830.html)
+[HTML](http://www.ota.ox.ac.uk/text/A65830.html)
 
 [ePub](http://www.ota.ox.ac.uk/text/A65830.epub)
 

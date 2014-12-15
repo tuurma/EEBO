@@ -98,7 +98,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                 <xsl:text>&#xa;**Links**&#xa;</xsl:text>
                 
                 <xsl:text>&#xa;[TCP catalogue](http://www.ota.ox.ac.uk/tcp.html)&#xa;</xsl:text>
-                <xsl:text>&#xa;[HTML](https://www.ota.ox.ac.uk/text/</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS']"/><xsl:text>.html)&#xa;</xsl:text>
+                <xsl:text>&#xa;[HTML](http://www.ota.ox.ac.uk/text/</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS']"/><xsl:text>.html)&#xa;</xsl:text>
                 <xsl:text>&#xa;[ePub](http://www.ota.ox.ac.uk/text/</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS']"/><xsl:text>.epub)&#xa;</xsl:text>
                 <xsl:text>&#xa;[Page images (Historical Texts)](https://data.historicaltexts.jisc.ac.uk/view?pubId=eebo-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='EEBO-CITATION']"/><xsl:text>e&amp;pageId=eebo-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='EEBO-CITATION']"/><xsl:text>e-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='VID']"/><xsl:text>-1)&#xa;</xsl:text>
                 
