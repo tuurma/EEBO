@@ -68,8 +68,8 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt.Againſt the 
 |8.|__extent__|2||
 |9.|__fileDesc__|1||
 |10.|__idno__|6|
-  * @_type_ (6) --- _DLPS (1), STC (2),
-  * EEBO-CITATION (1), OCLC (1), VID (1)_|
+ @_type_ (6) --- _DLPS (1), STC (2),
+ EEBO-CITATION (1), OCLC (1), VID (1)_|
 |11.|__keywords__|1| @_scheme_ (1) --- _http://authorities.loc.gov/ (1)_|
 |12.|__label__|5||
 |13.|__langUsage__|1||
