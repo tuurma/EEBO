@@ -25,26 +25,6 @@ This keyboarded and encoded edition of the work described above is co-owned by t
 1. __2010-11__ __Pip Willcox__ *Text and markup reviewed and edited*
 1. __2011-06__ __pfs__ *Batch review (QC) and XML conversion*
 
-**People** (3)
-       
-1. Ala
-1. Ola
-1. Tola
-
-**Types of content**
-
-  * Oh, Mr. Jourdain, there is **prose** in there!
-
-**Character listing**
-file:/home/ouit0180/EEBO/A65830.xml
-
-|Text|string(s)|codepoint(s)|
-|---|---|---|
-|Latin-1 Supplement|­|173|
-|Latin Extended-A|ſ|383|
-|Latin Extended-B|Ʋ|434|
-|General Punctuation|—•|8212 8226|
-
 ##Content Summary##
 
 #####Front#####
@@ -58,6 +38,29 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt.Againſt the 
 #####Back#####
 
 1. BOOKS Printed and Sold by Andrew Sowle at the Crooked Billet in Holloway-Lane in Shoreditch.
+
+**People** (3)
+       
+1. Ala
+1. Ola
+1. Tola
+
+**Types of content**
+
+  * Oh, Mr. Jourdain, there is **prose** in there!
+
+There are 1 **ommitted** fragments! 
+ @__reason__ (1) : illegible (1)  •  @__resp__ (1) : #OXF (1)  •  @__extent__ (1) : 2 letters (1)
+
+**Character listing**
+
+
+|Text|string(s)|codepoint(s)|
+|---|---|---|
+|Latin-1 Supplement|­|173|
+|Latin Extended-A|ſ|383|
+|Latin Extended-B|Ʋ|434|
+|General Punctuation|—•|8212 8226|
 
 ##Tag Usage Summary##
 
@@ -86,7 +89,7 @@ AN EPISTLE FOR True Love, Vnity AND ORDER IN THE Church of Chriſt.Againſt the 
 |19.|__p__|5||
 |20.|__particDesc__|1||
 |21.|__persName__|3||
-|22.|__person__|3| @__xml:id__ (3) : P1 (0)|
+|22.|__person__|3| @__xml:id__ (3) : P1 (0), P2 (0), P3 (0)|
 |23.|__prefixDef__|2| @__ident__ (2) : tcp (1), char (1)  •  @__matchPattern__ (2) : ([0-9\-]+):([0-9IVX]+) (1), (.+) (1)  •  @__replacementPattern__ (2) : http://eebo.chadwyck.com/downloadtiff?vid=$1&page=$2 (1), https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1 (1)|
 |24.|__profileDesc__|1||
 |25.|__projectDesc__|1||

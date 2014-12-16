@@ -25,12 +25,23 @@ To the extent possible under law, the Text Creation Partnership has waived all c
 1. __2009-09__ __Olivia Bottum__ *Text and markup reviewed and edited*
 1. __2010-04__ __pfs.__ *Batch review (QC) and XML conversion*
 
+##Content Summary##
+
+#####Front#####
+PRESIDENT CLAP, ON TERRESTRIAL COMETS.CONJECTURES UPON THE NATURE AND MOTION OF METEORS, WHICH ARE ABOVE THE ATMOSPHERE.BY THOMAS CLAP, A.
+#####Body#####
+
+1. CONJECTURES UPON THE NATURE AND MOTION OF METEORS, &c.
+
 **Types of content**
 
   * Oh, Mr. Jourdain, there is **prose** in there!
 
+There are 130 **ommitted** fragments! 
+ @__reason__ (130) : illegible (130)  •  @__resp__ (130) : #PDCC (130)  •  @__extent__ (130) : 1 word (8), 1 letter (110), 1 span (8), 2 letters (3), 3 letters (1)
+
 **Character listing**
-file:/home/ouit0180/EEBO/N13549.xml
+
 
 |Text|string(s)|codepoint(s)|
 |---|---|---|
@@ -39,14 +50,6 @@ file:/home/ouit0180/EEBO/N13549.xml
 |General Punctuation|•…—′|8226 8230 8212 8242|
 |Geometric Shapes|◊|9674|
 |CJKSymbolsandPunctuation|〈〉|12296 12297|
-
-##Content Summary##
-
-#####Front#####
-PRESIDENT CLAP, ON TERRESTRIAL COMETS.CONJECTURES UPON THE NATURE AND MOTION OF METEORS, WHICH ARE ABOVE THE ATMOSPHERE.BY THOMAS CLAP, A.
-#####Body#####
-
-1. CONJECTURES UPON THE NATURE AND MOTION OF METEORS, &c.
 
 ##Tag Usage Summary##
 

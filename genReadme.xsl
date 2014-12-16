@@ -123,85 +123,6 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                 <xsl:for-each select="/TEI/teiHeader/revisionDesc/change"><xsl:text>&#xa;1. </xsl:text><xsl:apply-templates mode="header" select="."/></xsl:for-each>
                 <xsl:text>&#xa;</xsl:text>
                 
-                <xsl:call-template name="entityList">
-                    <xsl:with-param name="set">
-                        <xsl:copy-of select="/TEI/teiHeader//listPerson"/>
-                    </xsl:with-param>
-                    <xsl:with-param name="elementName">person</xsl:with-param>
-                    <xsl:with-param name="label">People</xsl:with-param>
-                </xsl:call-template>
-                
-                <xsl:call-template name="entityList">
-                    <xsl:with-param name="set">
-                        <xsl:copy-of select="/TEI/teiHeader//listPlace"/>
-                    </xsl:with-param>
-                    <xsl:with-param name="elementName">place</xsl:with-param>
-                    <xsl:with-param name="label">Places</xsl:with-param>
-                </xsl:call-template>
-                
-                <xsl:call-template name="entityList">
-                    <xsl:with-param name="set">
-                        <xsl:copy-of select="/TEI/teiHeader//listWit"/>
-                    </xsl:with-param>
-                    <xsl:with-param name="elementName">witness</xsl:with-param>
-                    <xsl:with-param name="label">Witnesses</xsl:with-param>
-                </xsl:call-template>
-
-                <xsl:call-template name="entityList">
-                    <xsl:with-param name="set">
-                        <xsl:copy-of select="/TEI/text//castList"/>
-                    </xsl:with-param>
-                    <xsl:with-param name="elementName">castItem</xsl:with-param>
-                    <xsl:with-param name="label">Cast List</xsl:with-param>
-                </xsl:call-template>
-                
-
-                <xsl:text>&#xa;**Types of content**&#xa;</xsl:text>
-                <xsl:if test="count(key('E', 'l'))">&#xa;  * There are <xsl:value-of select="count(key('E', 'l'))"/> **verse** lines!</xsl:if>
-                <xsl:if test="key('E', 'u')">&#xa;  * There are <xsl:value-of select="count(key('E', 'u'))"/> **speech** utterances!</xsl:if>
-                <xsl:if test="key('E', 'sp')"><xsl:text>&#xa;  * There are </xsl:text><xsl:value-of select="count(key('E', 'sp'))"/><xsl:text> **drama** parts!</xsl:text>
-                   
-                   <xsl:choose>
-                       <xsl:when test="count(key('dramaCumVerse', '1')) = count(key('drama', '1'))">
-                           <xsl:text> This is **verse drama**.</xsl:text>
-                       </xsl:when>
-                       <xsl:when test="count(key('dramaCumProse', '1')) = count(key('drama', '1'))">
-                           <xsl:text> This is **prose drama**.</xsl:text>
-                       </xsl:when>
-                       <xsl:otherwise>
-                           <xsl:text> This is mixed prose (</xsl:text><xsl:value-of select="count(key('dramaCumProse', '1'))"/><xsl:text>) and verse (</xsl:text><xsl:value-of select="count(key('dramaCumVerse', '1'))"/><xsl:text>) drama.</xsl:text>
-                       </xsl:otherwise>
-                   </xsl:choose>
-                </xsl:if>
-                <xsl:if test="key('E', 'p')">&#xa;  * Oh, Mr. Jourdain, there is **prose** in there!</xsl:if>
-
-                    <xsl:if test="matches(/, '\p{IsAlchemicalSymbols}')">
-                        <xsl:message>Text has alchemical characters</xsl:message>
-                    </xsl:if>
-                
-                <xsl:text>&#xa;</xsl:text>
-            </xsl:if>    
-            
- 
-          
-            <xsl:text>&#xa;**Character listing**&#xa;</xsl:text>
-                    <xsl:value-of select="base-uri(/)"/>
-                    <xsl:text>&#xa;&#xa;|Text|string(s)|codepoint(s)|</xsl:text>
-            <xsl:text>&#xa;|---|---|---|</xsl:text>
-            <xsl:for-each-group select="$ranges//range" group-by="@n">
-                            <xsl:variable name="text"><xsl:value-of
-                                select="current-group()//text()" separator=""/></xsl:variable>
-
-                            <xsl:text>&#xa;|</xsl:text>
-                            <xsl:value-of select="@n"/>
-                            <xsl:text>|</xsl:text>
-                            <xsl:value-of select="codepoints-to-string(distinct-values(string-to-codepoints($text)))"/>
-                            <xsl:text>|</xsl:text>
-                            <xsl:value-of select="distinct-values(string-to-codepoints($text))"/>
-                            <xsl:text>|</xsl:text>
-                        </xsl:for-each-group>
-
-            <xsl:text>&#xa;</xsl:text>
             
         <xsl:if test="$headingSummary='true'">
             <xsl:text>&#xa;##Header Summary##&#xa;</xsl:text>
@@ -231,7 +152,97 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                 </xsl:with-param>
                 <xsl:with-param name="label">Back</xsl:with-param>
             </xsl:call-template>
+
+                <xsl:call-template name="entityList">
+                    <xsl:with-param name="set">
+                        <xsl:copy-of select="/TEI/teiHeader//listPerson"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="elementName">person</xsl:with-param>
+                    <xsl:with-param name="label">People</xsl:with-param>
+                </xsl:call-template>
+                
+                <xsl:call-template name="entityList">
+                    <xsl:with-param name="set">
+                        <xsl:copy-of select="/TEI/teiHeader//listPlace"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="elementName">place</xsl:with-param>
+                    <xsl:with-param name="label">Places</xsl:with-param>
+                </xsl:call-template>
+                
+                <xsl:call-template name="entityList">
+                    <xsl:with-param name="set">
+                        <xsl:copy-of select="/TEI/teiHeader//listWit"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="elementName">witness</xsl:with-param>
+                    <xsl:with-param name="label">Witnesses</xsl:with-param>
+                </xsl:call-template>
+                
+                <xsl:call-template name="entityList">
+                    <xsl:with-param name="set">
+                        <xsl:copy-of select="/TEI/text//castList"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="elementName">castItem</xsl:with-param>
+                    <xsl:with-param name="label">Cast List</xsl:with-param>
+                </xsl:call-template>
+                
+                
+                <xsl:text>&#xa;**Types of content**&#xa;</xsl:text>
+                <xsl:if test="count(key('E', 'l'))">&#xa;  * There are <xsl:value-of select="count(key('E', 'l'))"/> **verse** lines!</xsl:if>
+                <xsl:if test="key('E', 'u')">&#xa;  * There are <xsl:value-of select="count(key('E', 'u'))"/> **speech** utterances!</xsl:if>
+                <xsl:if test="key('E', 'sp')"><xsl:text>&#xa;  * There are </xsl:text><xsl:value-of select="count(key('E', 'sp'))"/><xsl:text> **drama** parts!</xsl:text>
+                    
+                    <xsl:choose>
+                        <xsl:when test="count(key('dramaCumVerse', '1')) = count(key('drama', '1'))">
+                            <xsl:text> This is **verse drama**.</xsl:text>
+                        </xsl:when>
+                        <xsl:when test="count(key('dramaCumProse', '1')) = count(key('drama', '1'))">
+                            <xsl:text> This is **prose drama**.</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:text> This is mixed prose (</xsl:text><xsl:value-of select="count(key('dramaCumProse', '1'))"/><xsl:text>) and verse (</xsl:text><xsl:value-of select="count(key('dramaCumVerse', '1'))"/><xsl:text>) drama.</xsl:text>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:if>
+                <xsl:if test="key('E', 'p')">&#xa;  * Oh, Mr. Jourdain, there is **prose** in there!</xsl:if>
+                
+                <xsl:if test="matches(/, '\p{IsAlchemicalSymbols}')">
+                    <xsl:message>Text has alchemical characters</xsl:message>
+                </xsl:if>
+                
+                <xsl:text>&#xa;</xsl:text>
+            </xsl:if>    
             
+            <!-- gaps -->
+            <xsl:if test="count(key('E', 'gap'))">
+                <xsl:text>&#xa;There are </xsl:text><xsl:value-of select="count(key('E', 'gap'))"/><xsl:text> **ommitted** fragments! &#xa;</xsl:text>
+                <xsl:for-each-group select="key('E', 'gap')/@*" group-by="name()">
+                    <xsl:text> @__</xsl:text><xsl:value-of select="current-grouping-key()"/><xsl:text>__ (</xsl:text>
+                    <xsl:value-of select="count(current-group())"/><xsl:text>) : </xsl:text>
+                    <xsl:for-each select="distinct-values(current-group())"><xsl:variable name="current"><xsl:value-of select="."/></xsl:variable><xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(key('attVals', concat('gap', current-grouping-key(), $current), $all))"/><xsl:text>)</xsl:text><xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if></xsl:for-each>
+                    <xsl:if test="position()!=last()"><xsl:text>  &#8226; </xsl:text></xsl:if>
+                </xsl:for-each-group>
+                <xsl:text>&#xa;</xsl:text>
+                
+            </xsl:if>            
+            
+            <xsl:text>&#xa;**Character listing**&#xa;</xsl:text>
+            <xsl:text>&#xa;&#xa;|Text|string(s)|codepoint(s)|</xsl:text>
+            <xsl:text>&#xa;|---|---|---|</xsl:text>
+            <xsl:for-each-group select="$ranges//range" group-by="@n">
+                <xsl:variable name="text"><xsl:value-of
+                    select="current-group()//text()" separator=""/></xsl:variable>
+                
+                <xsl:text>&#xa;|</xsl:text>
+                <xsl:value-of select="@n"/>
+                <xsl:text>|</xsl:text>
+                <xsl:value-of select="codepoints-to-string(distinct-values(string-to-codepoints($text)))"/>
+                <xsl:text>|</xsl:text>
+                <xsl:value-of select="distinct-values(string-to-codepoints($text))"/>
+                <xsl:text>|</xsl:text>
+            </xsl:for-each-group>
+            
+            <xsl:text>&#xa;</xsl:text>
+
             <xsl:text>&#xa;##Tag Usage Summary##&#xa;</xsl:text>
            
             <xsl:call-template name="tagUsage">
@@ -332,7 +343,6 @@ Read TEI P5 document and construct markdown readme file with summary of the file
         <xsl:text>###</xsl:text>
         <xsl:text>&#xa;</xsl:text>
 
-
         <xsl:text>&#xa;|No|element name|occ|attributes|</xsl:text>
         <xsl:text>&#xa;|---|---|---|---|</xsl:text>
         
@@ -355,28 +365,16 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                 <xsl:if test="position()!=last()"><xsl:text>  &#8226; </xsl:text></xsl:if>
             </xsl:for-each-group>
             <xsl:text>|</xsl:text>
-         
-           
         </xsl:for-each-group>
         <xsl:text>&#xa;</xsl:text>
-        
     </xsl:template>
     
     <xsl:template match="note | title | projectDesc" mode="header"><xsl:text>&#xa;*</xsl:text><xsl:value-of select="name()"/><xsl:text>*</xsl:text><xsl:apply-templates mode="header"/><xsl:text>&#xa;</xsl:text></xsl:template>
 
     <xsl:template match="change" mode="header" xml:space="default">
-     
           <xsl:text>__</xsl:text><xsl:value-of select="date"/><xsl:text>__ </xsl:text>
           <xsl:text>__</xsl:text><xsl:value-of select="label"/><xsl:text>__</xsl:text>
           <xsl:text> *</xsl:text><xsl:for-each select="child::text()"><xsl:value-of select="."/>*</xsl:for-each>
-      
-        
-     
-        </xsl:template>
-    
-
-
-
-    
+    </xsl:template>
 
 </xsl:stylesheet>

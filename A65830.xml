@@ -80,8 +80,8 @@
          <particDesc>
             <listPerson>
                <person xml:id="P1"><persName>Ala</persName></person>
-               <person xml:id="P1"><persName>Ola</persName></person>
-               <person xml:id="P1"><persName>Tola</persName></person>
+               <person xml:id="P2"><persName>Ola</persName></person>
+               <person xml:id="P3"><persName>Tola</persName></person>
             </listPerson>
          </particDesc>
       </profileDesc>
