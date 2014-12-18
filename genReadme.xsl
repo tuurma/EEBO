@@ -51,8 +51,8 @@ Read TEI P5 document and construct markdown readme file with summary of the file
     <xsl:output method="text"/>
     <xsl:strip-space elements="*"/>
     
-    
-    
+    <!-- restricted or free access -->
+    <xsl:param name="restricted">true</xsl:param>
     <!-- turn on debug messages -->
     <xsl:param name="debug">true</xsl:param>
     <!-- turn on messages -->
@@ -105,15 +105,28 @@ Read TEI P5 document and construct markdown readme file with summary of the file
                 <xsl:text></xsl:text><xsl:value-of select="."/><xsl:text>&#xa;</xsl:text>
             </xsl:for-each>
             
+            <xsl:variable name="subdir">
+                <xsl:choose>
+                    <xsl:when test="$restricted">
+                        <xsl:text>restricted</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>free</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>      
+            </xsl:variable>
             <xsl:if test="$generalSummary='true'">
                 <xsl:text>&#xa;##General Summary##&#xa;</xsl:text>
                 
                 <xsl:text>&#xa;**Links**&#xa;</xsl:text>
+                <xsl:text>&#xa;[TCP catalogue](http://www.ota.ox.ac.uk/tcp/)</xsl:text>
+                <xsl:text>  &#8226; &#xa;[HTML](http://downloads.ota.ox.ac.uk/tcp/Texts-HTML/</xsl:text><xsl:value-of select="$subdir"/><xsl:text>/</xsl:text><xsl:value-of select="substring(/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS'], 1, 3)"/><xsl:text>/</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS']"/><xsl:text>.html)</xsl:text>
+                <xsl:text>  &#8226; &#xa;[HTML](http://downloads.ota.ox.ac.uk/tcp/Texts-EPUB/</xsl:text><xsl:value-of select="$subdir"/><xsl:text>/</xsl:text><xsl:value-of select="substring(/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS'], 1, 3)"/><xsl:text>/</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS']"/><xsl:text>.epub)</xsl:text>
+                <xsl:if test="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='EEBO-CITATION']/string() and /TEI/teiHeader/fileDesc/publicationStmt/idno[@type='VID']/string()">
+                <xsl:text> &#8226; &#xa;[Page images (Historical Texts)](https://data.historicaltexts.jisc.ac.uk/view?pubId=eebo-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='EEBO-CITATION']"/><xsl:text>e&amp;pageId=eebo-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='EEBO-CITATION']"/><xsl:text>e-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='VID']"/><xsl:text>-1)</xsl:text>
+                </xsl:if>
                 
-                <xsl:text>&#xa;[TCP catalogue](http://www.ota.ox.ac.uk/tcp.html) &#8226; </xsl:text>
-                <xsl:text>&#xa;[HTML](http://www.ota.ox.ac.uk/text/</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS']"/><xsl:text>.html) &#8226; </xsl:text>
-                <xsl:text>&#xa;[ePub](http://www.ota.ox.ac.uk/text/</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='DLPS']"/><xsl:text>.epub) &#8226; </xsl:text>
-                <xsl:text>&#xa;[Page images (Historical Texts)](https://data.historicaltexts.jisc.ac.uk/view?pubId=eebo-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='EEBO-CITATION']"/><xsl:text>e&amp;pageId=eebo-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='EEBO-CITATION']"/><xsl:text>e-</xsl:text><xsl:value-of select="/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='VID']"/><xsl:text>-1)&#xa;</xsl:text>
+                <xsl:text>&#xa;</xsl:text>
                 
                 <xsl:if test="/TEI/teiHeader/fileDesc/publicationStmt/availability"><xsl:text>&#xa;**Availability**&#xa;</xsl:text></xsl:if>
                 <xsl:for-each select="/TEI/teiHeader/fileDesc/publicationStmt/availability"><xsl:text>&#xa;</xsl:text><xsl:value-of select="."/>&#xa;</xsl:for-each>

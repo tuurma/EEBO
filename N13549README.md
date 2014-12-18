@@ -8,10 +8,9 @@ Clap, Thomas, 1703-1767.
 
 **Links**
 
-[TCP catalogue](http://www.ota.ox.ac.uk/tcp.html) • 
-[HTML](http://www.ota.ox.ac.uk/text/N13549.html) • 
-[ePub](http://www.ota.ox.ac.uk/text/N13549.epub) • 
-[Page images (Historical Texts)](https://data.historicaltexts.jisc.ac.uk/view?pubId=eebo-e&pageId=eebo-e--1)
+[TCP catalogue](http://www.ota.ox.ac.uk/tcp/)  • 
+[HTML](http://downloads.ota.ox.ac.uk/tcp/Texts-HTML/restricted/N13/N13549.html)  • 
+[HTML](http://downloads.ota.ox.ac.uk/tcp/Texts-EPUB/restricted/N13/N13549.epub)
 
 **Availability**
 
