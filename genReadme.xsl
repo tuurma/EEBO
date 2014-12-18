@@ -107,7 +107,7 @@ Read TEI P5 document and construct markdown readme file with summary of the file
             
             <xsl:variable name="subdir">
                 <xsl:choose>
-                    <xsl:when test="$restricted">
+                    <xsl:when test="$restricted='true'">
                         <xsl:text>restricted</xsl:text>
                     </xsl:when>
                     <xsl:otherwise>
